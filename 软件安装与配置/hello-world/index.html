@@ -43,9 +43,9 @@
     }
 	
     const CONFIG_LEACLOUD_COUNT = {
-      enable: false,
-	  appId: 'AU8...',
-	  appKey: '4cU...',
+      enable: true,
+	  appId: 'YuLinzhong',
+	  appKey: 'r7LTOyedSD1D22TFzo198mvFVBJXl2IWXDrOqE3q5V2H4i71R4eRdmjwfEgJ8rvh-cn-n1',
 	  serverURLs: 'http' || ' '
     }
   </script>
@@ -56,9 +56,10 @@
 	<div id="preloader">
 		<div class="pre-container">
 			
-				<div class="spinner">
-					<div class="double-bounce1"></div>
-					<div class="double-bounce2"></div>
+				<div class="transition">
+					<div class="three-bounce1"></div>
+					<div class="three-bounce2"></div>
+					<div class="three-bounce3"></div>
 				</div>
 						
 		</div>
@@ -105,6 +106,10 @@
 	</p>
 
 	
+	
+		<span id="star-button" rel="unlike">
+			<i class="icon-heart"></i>
+		</span>
 	
 
 	<!-- Nav trigger for navigation-H-->
@@ -280,12 +285,12 @@
 			Hexo
 		</a>
 	
-		<a href="/tags/%E5%8D%9A%E5%AE%A2/" class=" ">
-			博客
-		</a>
-	
 		<a href="/tags/Github/" class=" ">
 			Github
+		</a>
+	
+		<a href="/tags/%E5%8D%9A%E5%AE%A2/" class=" ">
+			博客
 		</a>
 	
 		
@@ -293,7 +298,25 @@
 			
 			
 
+	
+    <span class="leancloud_visitors" id="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/_visitors" data-url="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" data-title="Hexo+Github博客搭建记录">
+       	<i class="icon-eye"></i>
+       	热度
+        
+            <i class="leancloud_visitors_count" id="leancloud_visitors_count">1</i>
+                   
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/_likes" data-url="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" data-title="Hexo+Github博客搭建记录" rel="unlike">
+        <i class="icon-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
+	
 
 		</div>
 
@@ -329,10 +352,10 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/" title="LaTeX快速入门" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/" title="LaTeX快速入门" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
 
@@ -379,12 +402,12 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" title="">
-											
+							<a class="relate-post-title" href="/HEXO%E5%8D%9A%E5%AE%A2/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" title="Annie主题使用说明">
+								Annie主题使用说明			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
-								十二月 6日, 2022				
+								八月 27日, 2018				
 							</p>
 							<p class="relate-post-content">
 								Matlab基础入门与进阶1 简介1.1 Matlab帮助系统
@@ -399,9 +422,9 @@ MATLAB 联机帮助： helpwin
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" title="">				
+							<a href="/HEXO%E5%8D%9A%E5%AE%A2/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" title="Annie主题使用说明">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/post-cover/74.jpg" alt="Annie主题使用说明"/>
 							</a>
 						</div>
 					</li>												
@@ -730,6 +753,11 @@ MATLAB 联机帮助： helpwin
 -->
 
 
+  
+<script src="/plugin/leancloud/av-min.js"></script>
+<script src="/js/leancloud-count.js"></script>
+
+
 	
 
   
@@ -757,6 +785,21 @@ MATLAB 联机帮助： helpwin
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var limitCount = 10;
+        if( $('#topN').length ){
+            setTimeout(function() {
+                topNPost(limitCount);
+			}, 3000);
+        }
+    </script>
+   
 								
 			</div>
 		</div>
