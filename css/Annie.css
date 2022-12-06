@@ -1099,6 +1099,11 @@ header .h-body .motto p.author {
   font-size: inherit;
   font-style: italic;
 }
+header .h-body .motto span.icon-quotes-left {
+  float: left;
+  left: -45px;
+  position: absolute;
+}
 header .h-body .motto span.icon-quotes-right {
   float: right;
   position: relative;
