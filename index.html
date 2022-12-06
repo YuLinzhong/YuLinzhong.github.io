@@ -1,1782 +1,545 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
 <!DOCTYPE html>
-<html>
+<html class="html-loading">
+		
+
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>YuLinzhong</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YuLinzhong">
-<meta property="og:url" content="https://yulinzhong.github.io/index.html">
-<meta property="og:site_name" content="YuLinzhong">
-<meta property="og:description" content="Blog">
-<meta property="og:locale">
-<meta property="article:author" content="Yu Linzhong">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="YuLinzhong" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
+      YuLinzhong
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+  </title>
+  <meta name="author" content="Yu Linzhong">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
 
   
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
+	<body>
+		<!-- Preloader -->
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">YuLinzhong</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Rechercher"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://yulinzhong.github.io"></form>
-      </div>
-    </div>
-  </div>
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
 </header>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-Matlab基础入门与进阶" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" class="article-date">
-  <time class="dt-published" datetime="2022-12-06T08:48:46.874Z" itemprop="datePublished">2022-12-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Matlab基础入门与进阶"><a href="#Matlab基础入门与进阶" class="headerlink" title="Matlab基础入门与进阶"></a>Matlab基础入门与进阶</h1><h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1 简介"></a>1 简介</h2><h3 id="1-1-Matlab帮助系统"><a href="#1-1-Matlab帮助系统" class="headerlink" title="1.1 Matlab帮助系统"></a>1.1 Matlab帮助系统</h3><ol>
-<li><p>查询函数 知道函数名 <code>help+函数名</code></p>
-</li>
-<li><p>MATLAB 联机帮助： <code>helpwin</code></p>
-</li>
-<li><p>查询函数 不知道全部函数名 模糊查询<code> lookfor</code> 函数信息</p>
-</li>
-<li><p>内存变量列表：<code> who</code></p>
-</li>
-<li><p>内存变量信息： <code>whos</code></p>
-</li>
-<li><p>目录中的文件列表：<code> what</code></p>
-</li>
-<li><p>确定文件位置： <code>which</code></p>
-</li>
-<li><p>变量检验函数： <code>exist</code></p>
-</li>
-</ol>
-<h3 id="1-2-Matlab-搜索路径"><a href="#1-2-Matlab-搜索路径" class="headerlink" title="1.2 Matlab 搜索路径"></a>1.2 Matlab 搜索路径</h3><ol>
-<li>查看路径：<code>path</code></li>
-<li>添加路径：<code>addpath</code></li>
-</ol>
-<h2 id="2-基础知识"><a href="#2-基础知识" class="headerlink" title="2 基础知识"></a>2 基础知识</h2><h3 id="2-1-Matlab-命令"><a href="#2-1-Matlab-命令" class="headerlink" title="2.1 Matlab 命令"></a>2.1 Matlab 命令</h3><ol>
-<li>指令行头首的“&gt;&gt;”是指令输入提示符，它是自动输入的 ，表示 MATLAB 处于准备就绪状态</li>
-<li>MATLAB不接受中文命令输入，注意在路径中也要尽量避免中文</li>
-<li>MATLAB对命令的格式要求相对严格，必须要按照格式来输入，如果不知道格式或者调用方式 可以查看帮助系统</li>
-<li>MATLAB的命令必须符合逻辑所有变量必须之前就存在</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728170346164.png" alt="image-20220728170346164"></p>
-<ol start="6">
-<li>MATLAB的代码执行如果返回结果但是没有写变量来保存，默认保存在ans变量中</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728170420994.png" alt="image-20220728170420994"></p>
-<ol start="7">
-<li>MATLAB的<code>;</code>可以不让MATLAB每次都显示运算结果</li>
-<li>MATLAB的<code>...</code>为续行号，如果命令太长或者出于某种需要，输入指令必须多行书写时,可以使用续行号来处理</li>
-<li>在解决的问题比较复杂的情况下，需要引入变量，赋予变量名称与数值，最后进行逻辑计算 </li>
-<li>显示或者改变工作目录：<code>cd</code></li>
-<li>清除命令行：<code>clc</code></li>
-<li>清除内存变量：<code>clear</code></li>
-<li><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728171249352.png" alt="image-20220728171249352"></li>
-</ol>
-<h3 id="2-2-Matlab功能符号"><a href="#2-2-Matlab功能符号" class="headerlink" title="2.2 Matlab功能符号"></a>2.2 Matlab功能符号</h3><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728170443749.png" alt="image-20220728170443749"></p>
-<h3 id="2-3-Matlab数据类型"><a href="#2-3-Matlab数据类型" class="headerlink" title="2.3 Matlab数据类型"></a>2.3 Matlab数据类型</h3><h4 id="2-3-1-概要"><a href="#2-3-1-概要" class="headerlink" title="2.3.1 概要"></a>2.3.1 概要</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728171401456.png" alt="image-20220728171401456"></p>
-<h4 id="2-3-2-变量"><a href="#2-3-2-变量" class="headerlink" title="2.3.2 变量"></a>2.3.2 变量</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728171610887.png" alt="image-20220728171610887"></p>
-<h5 id="2-3-2-1-整型"><a href="#2-3-2-1-整型" class="headerlink" title="2.3.2.1 整型"></a>2.3.2.1 整型</h5><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728172343857.png" alt="image-20220728172343857"></p>
-<h5 id="2-3-2-2-浮点型"><a href="#2-3-2-2-浮点型" class="headerlink" title="2.3.2.2 浮点型"></a>2.3.2.2 浮点型</h5><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728172713604.png" alt="image-20220728172713604"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728172635000.png" alt="image-20220728172635000"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728172704139.png" alt="image-20220728172704139"></p>
-<h5 id="2-3-2-3-复数"><a href="#2-3-2-3-复数" class="headerlink" title="2.3.2.3 复数"></a>2.3.2.3 复数</h5><p>与实数类似虚数单位用 i 表示即可 </p>
-<h4 id="2-3-3-常量"><a href="#2-3-3-常量" class="headerlink" title="2.3.3 常量"></a>2.3.3 常量</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728171854028.png" alt="image-20220728171854028"></p>
-<p>显示圆周率 pi 的值：<code>pi</code></p>
-<p>改变圆周率 pi 的值：<code>pi=1</code></p>
-<p>恢复常量pi的值：<code>clear pi</code>或重启matlab</p>
-<h4 id="2-3-4-显示格式"><a href="#2-3-4-显示格式" class="headerlink" title="2.3.4 显示格式"></a>2.3.4 显示格式</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728173528720.png" alt="image-20220728173528720"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728173657947.png" alt="image-20220728173657947"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728173838516.png" alt="image-20220728173838516"></p>
-<h3 id="2-4-Matlab-运算符"><a href="#2-4-Matlab-运算符" class="headerlink" title="2.4 Matlab 运算符"></a>2.4 Matlab 运算符</h3><p>MATLAB的运算符主要包括算术运算符 、 关系运算符和逻辑运算符 。</p>
-<h4 id="2-4-1-算术运算符"><a href="#2-4-1-算术运算符" class="headerlink" title="2.4.1 算术运算符"></a>2.4.1 算术运算符</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728174318354.png" alt="image-20220728174318354"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728174457205.png" alt="image-20220728174457205"></p>
-<h4 id="2-4-2-关系运算符"><a href="#2-4-2-关系运算符" class="headerlink" title="2.4.2 关系运算符"></a>2.4.2 关系运算符</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728175146897.png" alt="image-20220728175146897"></p>
-<h4 id="2-4-3-逻辑运算符"><a href="#2-4-3-逻辑运算符" class="headerlink" title="2.4.3 逻辑运算符"></a>2.4.3 逻辑运算符</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728175351118.png" alt="image-20220728175351118"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728175512638.png" alt="image-20220728175512638"></p>
-<p>注意不是按位运算！！！</p>
-<h3 id="2-5-Matlab-函数计算"><a href="#2-5-Matlab-函数计算" class="headerlink" title="2.5 Matlab 函数计算"></a>2.5 Matlab 函数计算</h3><p>除了简单的依靠运算符进行的MATLAB四则运算等，MATLAB还包括复数运算 、 三角函数和指数运算等运算 。</p>
-<h4 id="2-5-1-复数运算"><a href="#2-5-1-复数运算" class="headerlink" title="2.5.1 复数运算"></a>2.5.1 复数运算</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728181149383.png" alt="image-20220728181149383"></p>
-<p>示例：</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728181439831.png" alt="image-20220728181439831"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728181442916.png" alt="image-20220728181442916"></p>
-<h4 id="2-5-2-三角函数"><a href="#2-5-2-三角函数" class="headerlink" title="2.5.2 三角函数"></a>2.5.2 三角函数</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728181503864.png" alt="image-20220728181503864"></p>
-<h2 id="3-向量与多项式"><a href="#3-向量与多项式" class="headerlink" title="3 向量与多项式"></a>3 向量与多项式</h2><h3 id="3-1-Matlab-向量"><a href="#3-1-Matlab-向量" class="headerlink" title="3.1 Matlab 向量"></a>3.1 Matlab 向量</h3><h4 id="3-1-1-向量的定义和赋值"><a href="#3-1-1-向量的定义和赋值" class="headerlink" title="3.1.1 向量的定义和赋值"></a>3.1.1 向量的定义和赋值</h4><p>向量的生成：直接输入法、 冒号法和利用 MATLAB 函数创建三种方法 。</p>
-<h5 id="3-1-1-1-直接输入法"><a href="#3-1-1-1-直接输入法" class="headerlink" title="3.1.1.1 直接输入法"></a>3.1.1.1 直接输入法</h5><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728182227790.png" alt="image-20220728182227790"></p>
-<p>逗号和空格表示一个元素的结束，分号表示一行的结束。</p>
-<p>示例：</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728182521425.png" alt="image-20220728182521425"></p>
-<h5 id="3-1-1-2-冒号法"><a href="#3-1-1-2-冒号法" class="headerlink" title="3.1.1.2 冒号法"></a>3.1.1.2 冒号法</h5><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728182254038.png" alt="image-20220728182254038"></p>
-<p>若increment&lt;0，则表示递减数列，所以创建的时候first一定要大于last</p>
-<h5 id="3-1-1-3-利用-MATLAB-函数"><a href="#3-1-1-3-利用-MATLAB-函数" class="headerlink" title="3.1.1.3 利用 MATLAB 函数"></a>3.1.1.3 利用 MATLAB 函数</h5><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728182436585.png" alt="image-20220728182436585"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728183245396.png" alt="image-20220728183245396"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728183249989.png" alt="image-20220728183249989"></p>
-<h4 id="3-1-2-向量元素的引用"><a href="#3-1-2-向量元素的引用" class="headerlink" title="3.1.2 向量元素的引用"></a>3.1.2 向量元素的引用</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728183455771.png" alt="image-20220728183455771"></p>
-<ul>
-<li><p>与c语言不同，matlab元素的角标是从1开始的。</p>
-</li>
-<li><p>如何间隔地拿出元素？</p>
-<p>用x(n1:increment:n2)</p>
-</li>
-<li><p>如何不规律地拿出元素？</p>
-<ul>
-<li>本质上<code>()</code>内的是向量，只要输入任意向量，均可实现拿出元素的操作。所以我们可以用3.1.1方式拿出元素，如：<code>x([6 2 11])</code>表示拿出向量的第6个、第2个、第11个元素</li>
-<li>我们甚至可以用向量的拼接实现一部分规律拿出，一部分不规律拿出，如<code>x([2:5 [6 2 11]])</code>表示拿出2 3 4 5 6 2 11位置的元素</li>
-</ul>
-</li>
-</ul>
-<h4 id="3-1-3-向量的运算"><a href="#3-1-3-向量的运算" class="headerlink" title="3.1.3 向量的运算"></a>3.1.3 向量的运算</h4><ul>
-<li><code>+</code> <code>-</code> <code>*</code> <code>/</code> 与线代相同，略去</li>
-<li><code>.*</code> <code>./</code> <code>.\</code> 表示对应元素相乘或除</li>
-<li><code>dot(a,b)</code>表示向量的<strong>点积</strong>；<code>dot(a,b,dim)</code>表示向量在dim维的点积</li>
-<li><code>cross(a,b)</code>表示向量的<strong>叉积</strong>（原向量必须是三维）；<code>cross(a,b,dim)</code>表示向量在dim维的叉积（原向量必须有相同的维数）</li>
-</ul>
-<h3 id="3-2-Matlab多项式"><a href="#3-2-Matlab多项式" class="headerlink" title="3.2 Matlab多项式"></a>3.2 Matlab多项式</h3><h4 id="3-2-1-多项式的创建"><a href="#3-2-1-多项式的创建" class="headerlink" title="3.2.1 多项式的创建"></a>3.2.1 多项式的创建</h4><ol>
-<li>构造带字符多项式的基本方法是直接输入，主要由26个英文字母及空格等一些特殊符号组成。</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728212049878.png" alt="image-20220728212049878"></p>
-<ol start="2">
-<li>构造带数值多项式最简单的方法就是直接输入向量。这种方法通过函数<code>poly2sym</code>来实现。其调用格式为<code>poly2sym(p)</code>其中，p为多项式的系数向量。（0不可省略）</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728212309462.png" alt="image-20220728212309462"></p>
-<h4 id="3-2-2-多项式的计算"><a href="#3-2-2-多项式的计算" class="headerlink" title="3.2.2 多项式的计算"></a>3.2.2 多项式的计算</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728212502878.png" alt="image-20220728212502878"></p>
-<ol>
-<li>乘法运算</li>
-</ol>
-<ul>
-<li><p>多项式的乘法用函数<code>conv(p1,p2)</code>来实现，相当于执行两个数组的卷积。</p>
-</li>
-<li><p>卷积：将原多项式升幂&#x2F;降幂排列，相乘，得到的结果也升幂&#x2F;降幂排列后的系数矩阵即为答案</p>
-</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728214414512.png" alt="image-20220728214414512"></p>
-<ol start="2">
-<li>除法运算</li>
-</ol>
-<ul>
-<li><p>多项式的除法用函数<code>deconv(p1,p2)</code>来实现，相当于执行两个数组的解卷。调用格式为<code>[k,r]=deconv(p,q)</code>其中k返回的是多项式p除以q的商，r是余式。</p>
-</li>
-<li><p><code>[k,r]=deconv(p,q)</code>等价于<code>p=conv(q,k)+r</code></p>
-</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728215043947.png" alt="image-20220728215043947"></p>
-<ul>
-<li>由根构造多项式</li>
-</ul>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; root=[<span class="number">-5</span> <span class="number">3</span>+<span class="number">2</span><span class="built_in">i</span> <span class="number">3</span><span class="number">-2</span><span class="built_in">i</span>];</span><br><span class="line">&gt;&gt; p=poly(root)</span><br><span class="line"></span><br><span class="line">p =</span><br><span class="line"></span><br><span class="line">     <span class="number">1</span>    <span class="number">-1</span>   <span class="number">-17</span>    <span class="number">65</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; poly2sym(p)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line">x^<span class="number">3</span> - x^<span class="number">2</span> - <span class="number">17</span>*x + <span class="number">65</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>导数运算</li>
-</ol>
-<p>多项式导数运算用函数<code>polyder</code>来实现。调用格式为<code>polyder(p)</code>，其中p为多项式的系数向量，返回值为稀疏向量。</p>
-<h3 id="3-3-特殊向量"><a href="#3-3-特殊向量" class="headerlink" title="3.3 特殊向量"></a>3.3 特殊向量</h3><p>​		本节介绍的特殊变量包括单元型变量和结构型变量。这两种数据类型的特点是允许用户将不同但是相关的数据类型集成一个单一的变量，方便数据的管理。<br>​		单元型变量是以单元为元素的数组，每个元素称为单元，每个单元可以包含其他类型的数组，如实数矩阵、字符串、复数向量。单元型变量通常由“{}”创建，其数据通过数组下标来引用。</p>
-<h4 id="3-3-1-单元型变量的创建"><a href="#3-3-1-单元型变量的创建" class="headerlink" title="3.3.1 单元型变量的创建"></a>3.3.1 单元型变量的创建</h4><p>​		单元型变量的定义有两种方式，一种是用赋值语句直接定义，另一种是由cell函数预先分配存储空间，然后对单元元素逐个赋值。</p>
-<ol>
-<li>赋值语句直接定义。<br>在直接赋值过程中，与在矩阵的定义中使用中括号不同，单元型变量的定义需要使用大括号，而元素之间由逗号隔开。</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728221625215.png" alt="image-20220728221625215"></p>
-<p>​		Matlab语言会根据显示的需要决定是将单元元素完全显示，还是只显示存储量来代替。</p>
-<ol start="2">
-<li><p>对单元的元素逐个赋值。<br>该方法的操作方式是先预分配单元型变量的存储空间，然后对变量中的元素逐个进行赋值。实现预分配存储空间的函数是cell。</p>
-<p>​	在MATLAB中，可以用cell函数生成单元数组，具体的应用形式如下。</p>
-<ul>
-<li><p>当cell(N)生成一个nxn阶的置空的单元数组;</p>
-</li>
-<li><p>cell(M,N)或者cell([M,N])生成 一个mxn阶的置空的单元数组;</p>
-</li>
-<li><p>cell(M,N,P…)或者 cell(M,N,P…)生 成mxnxp…阶的置空的单元数组;</p>
-</li>
-<li><p>cell(size(A))生成与A同形式的单元型的置空矩阵。</p>
-</li>
-</ul>
-</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728222517086.png" alt="image-20220728222517086"></p>
-<h4 id="3-3-2-单元型变量的引用"><a href="#3-3-2-单元型变量的引用" class="headerlink" title="3.3.2 单元型变量的引用"></a>3.3.2 单元型变量的引用</h4><p>单元型变量的引用应采取大括号作为下标的标识，而小括号作为下标标识符则只显示该元素的压缩形式。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728222853497.png" alt="image-20220728222853497"></p>
-<h4 id="3-3-3-有关单元型变量的函数"><a href="#3-3-3-有关单元型变量的函数" class="headerlink" title="3.3.3 有关单元型变量的函数"></a>3.3.3 有关单元型变量的函数</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728222935502.png" alt="image-20220728222935502"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2是to的谐音梗</span><br></pre></td></tr></table></figure>
-
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728223210405.png" alt="image-20220728223210405"></p>
-<h4 id="3-3-4-结构型变量的创建和引用"><a href="#3-3-4-结构型变量的创建和引用" class="headerlink" title="3.3.4 结构型变量的创建和引用"></a>3.3.4 结构型变量的创建和引用</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728223621937.png" alt="image-20220728223621937"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728224106289.png" alt="image-20220728224106289"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728224110070.png" alt="image-20220728224110070"></p>
-<h4 id="3-3-5-结构型变量的相关函数"><a href="#3-3-5-结构型变量的相关函数" class="headerlink" title="3.3.5 结构型变量的相关函数"></a>3.3.5 结构型变量的相关函数</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728223922759.png" alt="image-20220728223922759"></p>
-<h2 id="4-矩阵运算"><a href="#4-矩阵运算" class="headerlink" title="4 矩阵运算"></a>4 矩阵运算</h2><h3 id="4-1-矩阵创建"><a href="#4-1-矩阵创建" class="headerlink" title="4.1 矩阵创建"></a>4.1 矩阵创建</h3><h4 id="4-1-1-直接输入法"><a href="#4-1-1-直接输入法" class="headerlink" title="4.1.1 直接输入法"></a>4.1.1 直接输入法</h4><p>​		在键盘上直接按行方式输入矩阵是最方便、最常用的创建数值矩阵的方法，尤其适合较小的简单矩阵。在用此方法创建矩阵时，应当注意以下几点。</p>
-<ul>
-<li><p>输入矩阵时要以“[ ]”为其标识符号，矩阵的所有元素必须都在括号内。</p>
-</li>
-<li><p>矩阵同行元素之间由空格(个数不限)或逗号分隔，行与行之间用分号或回车键分隔。</p>
-</li>
-<li><p>矩阵大小不 需要预先定义。</p>
-</li>
-<li><p>矩阵元素可以 是运算表达式。</p>
-</li>
-<li><p>若“[ ]”中无元素， 表示空矩阵。</p>
-</li>
-<li><p>如果不想显示中间结果， 可以用“;”结束。</p>
-</li>
-</ul>
-<h4 id="4-1-2-M文件生成法"><a href="#4-1-2-M文件生成法" class="headerlink" title="4.1.2 M文件生成法"></a>4.1.2 M文件生成法</h4><p>​		当矩阵的规模比较大时，直接输入法就显得笨拙，出差错也不易修改。为了解决这些问题，可以将所要输入的矩阵按格式先写入一文本文件中，并将此文件以m为其扩展名，即M文件。</p>
-<p>​		M文件是一种可以在MATLAB环境下运行的文本文件，它可以分为命令式文件和函数式文件两种。在此处主要用到的是命令式M文件，用它的简单形式来创建大型矩阵。在MATLAB命令行窗口中输入M文件名，所要输入的大型矩阵即可被输入到内存中。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728225435918.png" alt="image-20220728225435918"></p>
-<h4 id="4-1-3-利用文本创建"><a href="#4-1-3-利用文本创建" class="headerlink" title="4.1.3 利用文本创建"></a>4.1.3 利用文本创建</h4><p>​		MATLAB中的矩阵还可以由文本文件创建，即在文件夹(通常为work文件夹)中建立txt文件，在命令行窗口中直接调用此文件名即可。</p>
-<ol>
-<li>事先在笔记本中建立文件夹</li>
-<li>以good.txt保存，在Matlab命令行窗口中输入<code>load goods.txt</code></li>
-</ol>
-<p>或者直接点击上方导入数据即可</p>
-<h4 id="4-1-4-利用函数创建特定矩阵"><a href="#4-1-4-利用函数创建特定矩阵" class="headerlink" title="4.1.4 利用函数创建特定矩阵"></a>4.1.4 利用函数创建特定矩阵</h4><ul>
-<li>eye(n):创建nxn单位矩阵。</li>
-<li>当eye(m,n): 创建mxn的单位矩阵。</li>
-<li>eye(size(A)): 创建与A维数相同的 单位阵。</li>
-<li>ones(n):创建nxn全1矩阵。</li>
-<li>ones(m,n):创建mxn全1矩阵。</li>
-<li>ones(size(A)):创建与A维数相同的全1阵。</li>
-<li>zeros(m,n):创建mxn全0矩阵。</li>
-<li>zeros(size(A)):创建与A维数相同的全0阵。</li>
-<li>rand(n):在[0,1]区 间内创建- -个nxn均匀分布的随机矩阵。</li>
-<li>rand(m,n):在[0,1]区间内 创建一一个 mxn均匀分布的随机矩阵。</li>
-<li>rand(size(A)): 在[0,1]区间内 创建-一个与A维数相同的均匀分布的随机矩阵。</li>
-<li>compan(P): 创建系数向量是P的多项式的伴随矩阵。</li>
-<li>diag(v):创建一向量v中的元素为对角的对角阵。</li>
-<li>hilb(n): 创建nxn的Hilbert矩阵。</li>
-<li>magic(n):生成n阶魔方矩阵。</li>
-<li>sparse(A):将矩阵A转化为稀疏矩阵形式，即由A的非零元素和下标构成稀疏矩阵S。若A本身为稀疏矩阵，则返回A本身。</li>
-</ul>
-<h3 id="4-2-矩阵元素的操作"><a href="#4-2-矩阵元素的操作" class="headerlink" title="4.2 矩阵元素的操作"></a>4.2 矩阵元素的操作</h3><h4 id="4-2-1-矩阵元素的修改"><a href="#4-2-1-矩阵元素的修改" class="headerlink" title="4.2.1 矩阵元素的修改"></a>4.2.1 矩阵元素的修改</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728230504971.png" alt="image-20220728230504971"></p>
-<ul>
-<li><code>A(m,:)=[]</code>表示把第m行赋值为空</li>
-<li>同理，我们可以用<code>A(m,[1 3 4])</code>表示把第m行的第1 3 4 个元素拿出来</li>
-</ul>
-<h4 id="4-2-2-矩阵的变维"><a href="#4-2-2-矩阵的变维" class="headerlink" title="4.2.2 矩阵的变维"></a>4.2.2 矩阵的变维</h4><p>矩阵的变维可以用符号“:”法和reshape函数法。reshape 函数的调用形式如下。<br><code>reshape(X,m,n):</code>将已知矩阵变维成m行n列的矩阵。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728231215989.png" alt="image-20220728231215989"></p>
-<h4 id="4-2-3-矩阵的变向"><a href="#4-2-3-矩阵的变向" class="headerlink" title="4.2.3 矩阵的变向"></a>4.2.3 矩阵的变向</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728231249546.png" alt="image-20220728231249546"></p>
-<h4 id="4-2-4-矩阵的抽取"><a href="#4-2-4-矩阵的抽取" class="headerlink" title="4.2.4 矩阵的抽取"></a>4.2.4 矩阵的抽取</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728231338755.png" alt="image-20220728231338755"></p>
-<h3 id="4-3-矩阵的基本运算"><a href="#4-3-矩阵的基本运算" class="headerlink" title="4.3 矩阵的基本运算"></a>4.3 矩阵的基本运算</h3><p>​		矩阵的基本运算包括加、减、乘、数乘、点乘、乘方、左除、右除、求逆等。其中加、减、乘与大家所学的线性代数中的定义是一样的，相应的运算符为<code>+</code> <code>-</code> <code>*</code>，故后文略去。<br>​		矩阵的除法运算是MATLAB所特有的，分为左除和右除，相应运算符为“\”和“)”。一般情况下，方程A<em>X&#x3D;B的解是X&#x3D;A\B，而方程X</em>A&#x3D;B的解是X&#x3D;B&#x2F;A。<br>​		对于上述的四则运算，需要注意的是:矩阵的加、减、乘运算的维数要求与线性代数中的要求一致。</p>
-<h4 id="4-3-1-点乘运算"><a href="#4-3-1-点乘运算" class="headerlink" title="4.3.1 点乘运算"></a>4.3.1 点乘运算</h4><p>​	点乘运算指将两矩阵中相同位置的元素进行想成运算，将乘积保存在原位置组成新矩阵。</p>
-<h4 id="4-3-2-左除运算"><a href="#4-3-2-左除运算" class="headerlink" title="4.3.2 左除运算"></a>4.3.2 左除运算</h4><p>由于矩阵的特殊性，A * B 通常不等于B * A，除法也一样。因此除法要区分左右。<br>线性方程组D * X&#x3D;B，如果D非奇异，即它的逆矩阵inv(D)存在，则其解用MATLAB表示为<code>X=inv(D)*B= D\B</code><br>符号“\”称为左除，即分母放在左边。<br>左除的条件: B的行数等于D的阶数(D的行数和列数相同，简称阶数)。</p>
-<h4 id="4-3-3-右除运算"><a href="#4-3-3-右除运算" class="headerlink" title="4.3.3 右除运算"></a>4.3.3 右除运算</h4><p>若方程组表示为X * DI&#x3D;B1，D1非奇异，即它的逆阵inv(D1)存在，则其解为<br><code>X=B1*inv(D1)=B1/D1</code><br>符号“1&#x2F;” 称为右除。<br>右除的条件: B1的列数等于D1的阶数(D1的行数和列数相同，简称阶数)。</p>
-<h4 id="4-3-4-常用函数"><a href="#4-3-4-常用函数" class="headerlink" title="4.3.4 常用函数"></a>4.3.4 常用函数</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728232729361.png" alt="image-20220728232729361"></p>
-<h4 id="4-3-5-逆矩阵"><a href="#4-3-5-逆矩阵" class="headerlink" title="4.3.5 逆矩阵"></a>4.3.5 逆矩阵</h4><p>​		对于n阶方阵A，如果有n阶方阵B满足AB&#x3D;BA&#x3D;I，则称矩阵A为可逆的，称方阵B为A的逆矩阵，记为A^-1^。<br>​		逆矩阵的性质:</p>
-<ul>
-<li>若A可逆， 则A^-1^是唯一的。</li>
-<li>若A可逆，则A^-1^也可逆，并且(A^-1^)^-1^&#x3D;A。</li>
-<li>若n阶方阵A 与B都可逆，则AB也可逆， 且(AB)^-1^&#x3D;B^-1^A^-1^。</li>
-<li>当若A可逆， 则|A^-1^|&#x3D;|A|^-1^。</li>
-</ul>
-<p>​		我们把满足|A|≠0的方阵A称为非奇异的，否则就称为奇异的。<br>​		求解矩阵的逆使用函数inv,调用格式为<code>Y=inv(X)</code><br>​		求解矩阵的逆条件数值使用函数rcond<br>​		另外，常用的运算还有指数函数、对数函数、平方根函数等。用户可查看相应的帮助获得使用方法和相关信息。</p>
-<h4 id="4-3-6-矩阵的条件数"><a href="#4-3-6-矩阵的条件数" class="headerlink" title="4.3.6 矩阵的条件数"></a>4.3.6 矩阵的条件数</h4><p>矩阵的条件数在数值分析中是一一个重要的概念，在工程计算中也是必不可少的，它用于刻画一个矩阵的“病态”程度。<br>对于非奇异矩阵A,其条件数的定义为<br>$$<br>cond(A)<em>v &#x3D;||A^{-1}||</em>{v}||A||_v，其中v&#x3D;1，2，···，F<br>$$<br>它是一个大于或等于1的实数，当A的条件数相对较大，即cond(A),&gt;&gt;1时，矩阵A是“病态”的，反之是“良态”的。</p>
-<h4 id="4-3-7-范数"><a href="#4-3-7-范数" class="headerlink" title="4.3.7 范数"></a>4.3.7 范数</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728234717473.png" alt="image-20220728234717473"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728234723421.png" alt="image-20220728234723421"></p>
-<h4 id="4-3-8-奇异值分解-SVD"><a href="#4-3-8-奇异值分解-SVD" class="headerlink" title="4.3.8 奇异值分解(SVD)"></a>4.3.8 奇异值分解(SVD)</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728234748869.png" alt="image-20220728234748869"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728234753910.png" alt="image-20220728234753910"></p>
-<h2 id="5-符号运算"><a href="#5-符号运算" class="headerlink" title="5 符号运算"></a>5 符号运算</h2><p>​		在数学、物理学及力学等各种学科和工程应用中，经常还会遇到符号运算的问题。在MATLAB中,符号运算是为了得到更高精度的数值解，但数值的运算更容易让读者理解，因此在特定的情况下，分别使用符号或数值表达式进行不同的运算。<br>​		符号运算是MATLAB数值计算的扩展，在运算过程中以符号表达式或符号矩阵为运算对象，实现了符号计算和数值计算的相互结合，使应用更灵活。<br>​		符号表达式与数值表达式的相互转换主要是通过函数eval和sym实现的。其中，eval函数用于将符号表达式转换成数值表达式，而函数sym用于将数值表达式转换成符号表达式。其调用格式如<br>表11-1所示。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728235658708.png" alt="image-20220728235658708"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728235703437.png" alt="image-20220728235703437"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728235715621.png" alt="image-20220728235715621"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728235719107.png" alt="image-20220728235719107"></p>
-<h3 id="5-1-生成符号矩阵"><a href="#5-1-生成符号矩阵" class="headerlink" title="5.1 生成符号矩阵"></a>5.1 生成符号矩阵</h3><h4 id="5-1-1-直接输入"><a href="#5-1-1-直接输入" class="headerlink" title="5.1.1 直接输入"></a>5.1.1 直接输入</h4><p>​		直接输入符号矩阵时，符号矩阵的每一行都要用方括号括起来，而且要保证同一列的各行元素字符串的长度相同，因此在较短的字符串中要插入空格来补齐长度，否则程序将会报错。</p>
-<h4 id="5-1-2-用sym函数创建符号矩阵"><a href="#5-1-2-用sym函数创建符号矩阵" class="headerlink" title="5.1.2 用sym函数创建符号矩阵"></a>5.1.2 用sym函数创建符号矩阵</h4><p>​		用这种方法创建符号矩阵，矩阵元素可以是任何不带等号的符号表达式，各矩阵元素之间用逗号或空格分隔，各行之间用分号分隔，各元素字符串的长度可以不相等。常用的调用格式如表11-3所示。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729000149310.png" alt="image-20220729000149310"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729000343256.png" alt="image-20220729000343256"></p>
-<p>推荐方法：</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; syms x y z	#先创建符号变量</span><br><span class="line">&gt;&gt; a=[x,y;y,x];	#再创建符号表达式</span><br><span class="line">&gt;&gt; a</span><br><span class="line"> </span><br><span class="line">a =</span><br><span class="line"> </span><br><span class="line">[x, y]</span><br><span class="line">[y, x]</span><br></pre></td></tr></table></figure>
-
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729000901125.png" alt="image-20220729000901125"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729000903708.png" alt="image-20220729000903708"></p>
-<h4 id="5-1-3-数值矩阵转化为符号矩阵"><a href="#5-1-3-数值矩阵转化为符号矩阵" class="headerlink" title="5.1.3 数值矩阵转化为符号矩阵"></a>5.1.3 数值矩阵转化为符号矩阵</h4><p>​		在MATLAB中，数值矩阵不能直接参与符号运算，所以必须先转化为符号矩阵。<br>​		与数值矩阵一样，符号矩阵可以进行转置、求逆等运算，但符号矩阵的函数与数值矩阵的函数不同。本节将一一进行介绍。</p>
-<h3 id="5-2-符号矩阵的运算"><a href="#5-2-符号矩阵的运算" class="headerlink" title="5.2 符号矩阵的运算"></a>5.2 符号矩阵的运算</h3><h4 id="5-2-1-符号矩阵的转置运算"><a href="#5-2-1-符号矩阵的转置运算" class="headerlink" title="5.2.1 符号矩阵的转置运算"></a>5.2.1 符号矩阵的转置运算</h4><p>​		符号矩阵的转置运算可以通过符号<code>&#39;</code> 或函数transpose来实现，其调用格式如下：</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">B=A.&#x27;</span><br><span class="line"></span><br><span class="line">B=transpose(A)</span><br></pre></td></tr></table></figure>
-
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729001558814.png" alt="image-20220729001558814"></p>
-<h4 id="5-2-2-符号矩阵的行列式运算"><a href="#5-2-2-符号矩阵的行列式运算" class="headerlink" title="5.2.2 符号矩阵的行列式运算"></a>5.2.2 符号矩阵的行列式运算</h4><p>​		符号矩阵的行列式运算可以通过函数determ或det来实现，其中矩阵必须使用方阵，调用格式为<code>d=det(A)</code></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002136920.png" alt="image-20220729002136920"></p>
-<h4 id="5-2-3-符号矩阵的逆运算"><a href="#5-2-3-符号矩阵的逆运算" class="headerlink" title="5.2.3 符号矩阵的逆运算"></a>5.2.3 符号矩阵的逆运算</h4><p>​		符号矩阵的逆运算可以通过函数inv来实现，其中矩阵必须使用方阵，调用格式为<code>inv(A)</code></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002108076.png" alt="image-20220729002108076"></p>
-<h4 id="5-2-4-符号矩阵的求秩运算"><a href="#5-2-4-符号矩阵的求秩运算" class="headerlink" title="5.2.4 符号矩阵的求秩运算"></a>5.2.4 符号矩阵的求秩运算</h4><p>​		符号矩阵的求秩运算可以通过函数rank来实现，调用格式为<code>rank (A)</code></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002117981.png" alt="image-20220729002117981"></p>
-<h4 id="5-2-5-符号矩阵的常用函数运算"><a href="#5-2-5-符号矩阵的常用函数运算" class="headerlink" title="5.2.5 符号矩阵的常用函数运算"></a>5.2.5 符号矩阵的常用函数运算</h4><ul>
-<li><p>符号矩阵的特征值、 特征向量运算:可以通过函数eig、eigensys 来实现。</p>
-</li>
-<li><p>符号矩阵的奇异值运算:可以通过函数svd、singavals 来实现。</p>
-</li>
-<li><p>符号矩阵的若尔当(Jordan)标准形运算:可以通过函数jordan来实现。</p>
-</li>
-</ul>
-<h3 id="5-3-符号矩阵的其他运算"><a href="#5-3-符号矩阵的其他运算" class="headerlink" title="5.3 符号矩阵的其他运算"></a>5.3 符号矩阵的其他运算</h3><h4 id="5-3-1-因式分解"><a href="#5-3-1-因式分解" class="headerlink" title="5.3.1 因式分解"></a>5.3.1 因式分解</h4><p>​		符号矩阵因式分解通过函数factor 来实现，其调用格式为<code>factor(S)</code><br>​		输入变量S为一符号矩阵，此函数将因式分解此矩阵的各个元素。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002735281.png" alt="image-20220729002735281"></p>
-<h4 id="5-3-2-符号矩阵的展开"><a href="#5-3-2-符号矩阵的展开" class="headerlink" title="5.3.2 符号矩阵的展开"></a>5.3.2 符号矩阵的展开</h4><p>​		符号多项式的展开可以通过函数expand来实现，其调用格式为<code>expand(S)</code><br>​		对符号矩阵的各元素的符号表达式进行展开。此函数经常用在多项式的表达式中，也常用在三角函数、指数函数、对数函数的展开中。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002806181.png" alt="image-20220729002806181"></p>
-<h4 id="5-3-3-符号简化"><a href="#5-3-3-符号简化" class="headerlink" title="5.3.3 符号简化"></a>5.3.3 符号简化</h4><p>符号简化可以通过函数simple和simplify 来实现，其调用格式如表11-5所示。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002901113.png" alt="image-20220729002901113"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002923058.png" alt="image-20220729002923058"></p>
-<h4 id="5-3-4-分式通分"><a href="#5-3-4-分式通分" class="headerlink" title="5.3.4 分式通分"></a>5.3.4 分式通分</h4><p>求解符号表达式的分子和分母可以通过函数numden来实现，其调用格式为<code>[n, d]=numden (A)</code><br>把A的各元素转换为分子和分母都是整系数的最佳多项式型。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729003100099.png" alt="image-20220729003100099"></p>
-<h4 id="5-3-5-符号表达式的“秦九韶型”重写"><a href="#5-3-5-符号表达式的“秦九韶型”重写" class="headerlink" title="5.3.5 符号表达式的“秦九韶型”重写"></a>5.3.5 符号表达式的“秦九韶型”重写</h4><p>符号表达式的“秦九韶型”重写可以通过函数horner(P)来实现，其调用格式为<code>horner (P)</code><br>将符号多项式转换成嵌套形式表达式。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729003210546.png" alt="image-20220729003210546"></p>
-<h2 id="6-二维绘图"><a href="#6-二维绘图" class="headerlink" title="6 二维绘图"></a>6 二维绘图</h2><h3 id="6-1-基本绘图指令"><a href="#6-1-基本绘图指令" class="headerlink" title="6.1 基本绘图指令"></a>6.1 基本绘图指令</h3><h4 id="6-1-1-plot命令"><a href="#6-1-1-plot命令" class="headerlink" title="6.1.1 plot命令"></a>6.1.1 plot命令</h4><ul>
-<li><p>plot 命令是最基本的绘图命令，也是最常用的一个绘图命令。</p>
-</li>
-<li><p>当执行 plot 命令时，系统会自动创建一个新的图形窗口。</p>
-</li>
-<li><p>如果之前已经有图形窗口了，那么系统会将图形画在最近打开的图形窗口上，原有的图形也将被覆盖。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729140725411.png" alt="image-20220729140725411"></p>
-</li>
-</ul>
-<ol>
-<li><p><strong>plot(X,Y) 创建 Y 中数据对 X 中对应值的二维线图</strong></p>
-<ul>
-<li>X 和 Y 必须是同维向量。绘制以 X 为横坐标、Y 为纵坐标的曲线。</li>
-<li>如果 X 是向量， Y 是矩阵时。 X 的维数应当与 Y 的某一维相等。绘制多条颜色不同的曲线，曲线数等于 Y 的另一维， X 作为曲线的横坐标。如果矩阵是方阵，绘制 Y 的每一列对 X 的曲线。（ MATLAB 的列优先原则）</li>
-<li>如果 X 是矩阵， Y 是向量，同上，但此时 Y是横坐标</li>
-<li>如果 X 和 Y 是同维矩阵，以 X 的每一列作为横坐标、以 Y 对应的列元素作为纵坐标绘制曲线，曲线数等于列数。</li>
-</ul>
-</li>
-<li><p><strong>plot( x,y,LineSpec) 设置线型、标记符号和颜色</strong></p>
-<ul>
-<li>LineSpec 为包含符号的字符向量或者字符串，用来设置所画数据点的形状、大小和颜色，以及数据点之间连线的形状、粗细、颜色等。</li>
-<li>在实际应用中， LineSpec 是某些字母或符号的组合，可以省略。</li>
-<li>在省略时， MATLAB 将会使用默认设置，曲线采用实线，不同曲线将按照一定顺序着色。（不同版本 MATLAB 默认颜色顺序不同）</li>
-<li>如果忽略线型，只指定标记，则绘图时只显示标记，不显示线条。</li>
-<li>示例：<code>--or</code>是带有圆形标记的红色虚线。</li>
-<li>以下给出基本的线型、标记符号和颜色，之后还会对更复杂的进行介绍。</li>
-</ul>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729141753358.png" alt="image-20220729141753358" style="zoom:67%;" /></li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729141847178.png" alt="image-20220729141847178"></p>
-<ol start="3">
-<li><p><strong>plot(x1,y1,…, xn,yn 绘制多个 x 、 y 对应的图，所有的线条都使用相同的坐标区。</strong>		</p>
-<p><strong>plot(x1,y1,LineSpec1,…, xn,yn,LineSpecn)设置每个线条的线型、标记符号和颜色。</strong><br>在使用时， x 、 y 、 LineSpec 三元组和 x 、 y可以混用。</p>
-</li>
-<li><p><strong>plot(y) 创建 y 中数据对每个值索引的二维线图。</strong></p>
-<ul>
-<li>如果 y 是实向量，则 x 轴刻度范围从 1 到length(y).</li>
-<li>如果 y 是实矩阵，按列绘制出每列元素值对应其下标的曲线，曲线数等于 y 的列数。</li>
-<li>如果 y 是复矩阵，按列分别绘制出以元素实部为横坐标，虚部为纵坐标的多条曲线。即等效于 plot(real(y), imag (y))</li>
-</ul>
-<p><strong>plot( y,LineSpec 设置线型、标记符号和颜色。</strong></p>
-</li>
-<li><p>其他格式</p>
-<ul>
-<li>plot( _, Name,Value )使用一个或多个 Name Value 对组参数指定线条的属性。可以将这一选项与前面语法中的任何输入参数组合一起使用。</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143621332.png" alt="image-20220729143621332"></p>
-<ul>
-<li><p>plot(ax,_ ) 将在由 ax 指定的坐标区中而不是当前坐标区 gca 中创建线条。选项 ax 可以位于前面的语法中任何输入参数组合之前。</p>
-</li>
-<li><p>h&#x3D;plot( _ ) 将返回由图形线条对象组成的列向量。在创建特定的图形线条之后，可以使用 h 修改其属性。</p>
-<p>​					<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143206609.png" alt="image-20220729143206609"><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143212948.png" alt="image-20220729143212948"></p>
-<p>​	<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143221977.png" alt="image-20220729143221977" style="zoom:50%;" /><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143224423.png" alt="image-20220729143224423" style="zoom:50%;" /></p>
-</li>
-</ul>
-</li>
-</ol>
-<h4 id="6-1-2-fplot命令"><a href="#6-1-2-fplot命令" class="headerlink" title="6.1.2 fplot命令"></a>6.1.2 fplot命令</h4><ul>
-<li>专门用于绘制一元函数的命令。</li>
-<li>自适应地指导数据点的选取。平滑处点稀疏，陡峭处点密集。</li>
-<li>图像比 plot 的更光滑和准确。</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729144704162.png" alt="image-20220729144704162"></p>
-<ol>
-<li><p><strong>fplot (f) 在默认区间 [5,5]（对于 x ）绘制由函数y&#x3D;f(x) 定义的曲线</strong></p>
-</li>
-<li><p><strong>fplot(f,xinterval)将在指定的区间绘图，区间为[xmin xmax]形式的二元向量。</strong></p>
-</li>
-<li><p><strong>fplot(funx,funy)在默认区间[-5,5]（对于 t ）绘制由函数 x&#x3D; funx (t)和 y&#x3D; funy (t)定义的曲线。</strong></p>
-</li>
-<li><p><strong>fplot(funx,funy,tinterval)将在指定的区间绘图，区间为[tmin tmax]形式的二元向量。</strong></p>
-</li>
-<li><p>fplot ( _ ,LineSpec)指定线型、标记符号和线条颜色。</p>
-</li>
-<li><p>fplot ( _ ,Name,Value)使用一个或多个名称 值对组来指定线条属性。</p>
-</li>
-<li><p>fplot (ax,_ )将图形绘制到 ax 指定的坐标区中。</p>
-</li>
-<li><p>fp fplot ( _ )根据输入返回一个对象，接下来可以使用 fp 查询和修改特定线条的属性。</p>
-</li>
-</ol>
-<h4 id="6-1-3-ezplot命令-不推荐"><a href="#6-1-3-ezplot命令-不推荐" class="headerlink" title="6.1.3 ezplot命令(不推荐)"></a>6.1.3 ezplot命令(不推荐)</h4><h4 id="6-1-4-subplot-命令"><a href="#6-1-4-subplot-命令" class="headerlink" title="6.1.4 subplot 命令"></a>6.1.4 subplot 命令</h4><ul>
-<li>在同一图形窗口中分割出所需要的几个窗口。</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729151126403.png" alt="image-20220729151126403"></p>
-<ol>
-<li>subplot( m,n,p )命令将当前窗口分割成 m × n 个视图区域，并 p 指<br>定的位置创建坐标区。在编号时，行优先。</li>
-<li>‘replace’参数，删除位置 p 现有的坐标区并创建<br>新坐标区。</li>
-<li>‘align’参数，默认参数，创建新坐标区。</li>
-<li>subplot( m,n,p,ax )将现有坐标区 ax 转换为同一图<br>窗中的子图。</li>
-<li>subplot(‘Position’, pos )在 pos 指定的自定义位置<br>创建坐标区。<ul>
-<li>pos 的格式为 [left bottom width]</li>
-<li>如果新坐标区与现有坐标区重叠，现有坐标区将被替换掉。</li>
-</ul>
-</li>
-</ol>
-<h3 id="6-2-不同坐标系下的绘图命令"><a href="#6-2-不同坐标系下的绘图命令" class="headerlink" title="6.2 不同坐标系下的绘图命令"></a>6.2 不同坐标系下的绘图命令</h3><h4 id="6-2-1-极坐标系polarplot"><a href="#6-2-1-极坐标系polarplot" class="headerlink" title="6.2.1 极坐标系polarplot"></a>6.2.1 极坐标系polarplot</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729151512589.png" alt="image-20220729151512589"></p>
-<ul>
-<li>polarplot(theta,rho)在极坐标中绘制线条，由 theta 表示极角，单位为弧度， rho 表示<br>极径。 theta 和 rho 可以均为向量或矩阵，也可以一个向量一个矩阵，与 plot 类似。</li>
-<li>polarplot(rho)按等间隔角度（介于 0 和 2π之间）绘制 rho 中的半径值。</li>
-<li>polarplot(z)绘制 z 中的复数值。极径对应的复数的模长，极角对应复数的幅角主值。</li>
-<li>polarplot(pax ,_)使用 pax 指定的坐标区。</li>
-</ul>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[theta,rho]= x,y #直角坐标系转极坐标系</span><br><span class="line">R=deg2rad(D)	 #角度转弧度</span><br><span class="line">D=rad2deg(R)	 #弧度转角度</span><br><span class="line">[x,y]= theta,rho #极坐标系转直角坐标系</span><br></pre></td></tr></table></figure>
-
-<h4 id="6-2-2-半对数坐标系semilog"><a href="#6-2-2-半对数坐标系semilog" class="headerlink" title="6.2.2 半对数坐标系semilog"></a>6.2.2 半对数坐标系semilog</h4><ul>
-<li>semilogx 用来绘制 x 轴为对数坐标、 y 轴为线性坐标的曲线。</li>
-<li>semilogy 用来绘制 x 轴为线性坐标、 y 轴为对数坐标的曲线。</li>
-<li>对数为以 10 为底的常用对数。</li>
-<li>输入参数参照plot函数</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729152438626.png" alt="image-20220729152438626"></p>
-<ul>
-<li>除了半对数坐标绘图外， MATLAB 还提供了双对数坐标系下的绘图命令 loglog使用方法与 semilogx 相类似。</li>
-</ul>
-<h4 id="6-2-3-双y轴坐标plotyy、yyaxis"><a href="#6-2-3-双y轴坐标plotyy、yyaxis" class="headerlink" title="6.2.3 双y轴坐标plotyy、yyaxis"></a>6.2.3 双y轴坐标plotyy、yyaxis</h4><ol>
-<li>plotyy不推荐</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729155330913.png" alt="image-20220729155330913"></p>
-<p>使用 function 所指定的绘图函数生成图形， function 可以指定为 plot,semilogx , semilogy , loglog 和 stem 的函数。</p>
-<ol start="2">
-<li>yyaxis</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729155402774.png" alt="image-20220729155402774"></p>
-<p>可以把yyaxis理解成一个指针，输入<code>yyaxis left</code>后就告诉计算机我要画左边的图了，然后直接画就可以了；再输入<code>yyaxis right</code>画右边的图</p>
-<h3 id="6-3-图形窗口"><a href="#6-3-图形窗口" class="headerlink" title="6.3 图形窗口"></a>6.3 图形窗口</h3><ol>
-<li>创建图形窗口——figure命令</li>
-</ol>
-<ul>
-<li>figure: 使用默认属性值创建一个新的图窗窗口。</li>
-<li>figure( Name,Value )使用一个或多个名称 值对组参数修改图窗的属性。</li>
-<li>f&#x3D;figure( _ ): 返回 Figure 对象，可以在之后使用 f 查询修改属性。</li>
-<li>figure(f): 将 f 指定为当前图窗</li>
-<li>figure(n): 创建一个编号为 Figure(n) 的图形窗口， n 是一个正整数。</li>
-</ul>
-<ol start="2">
-<li>图形窗口的其它命令</li>
-</ol>
-<ul>
-<li>set 命令可以用来设定图形窗口的属性值。</li>
-<li>get 命令可以用来查询图形窗口的属性值。</li>
-<li>close 命令可以用来关闭图形窗口。</li>
-<li>clf 命令可以用来清空当前图形窗口。<ul>
-<li>clf (‘reset’) 除了能够清除当前图形窗口的所有内容以外，还可以将该图形除了 Position, Units, PaperPosition 和 PaperUnits 属性外的所有属性都重置为默<br>认状态。</li>
-<li>这里前缀为 Paper 的两个属性代表的是打印或保存时页面上的图窗属性。</li>
-</ul>
-</li>
-</ul>
-<ol start="3">
-<li>figure的部分属性</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729160539219.png" alt="image-20220729160539219"></p>
-<h3 id="6-4-图形标注"><a href="#6-4-图形标注" class="headerlink" title="6.4 图形标注"></a>6.4 图形标注</h3><h4 id="6-4-1-坐标系与坐标轴"><a href="#6-4-1-坐标系与坐标轴" class="headerlink" title="6.4.1 坐标系与坐标轴"></a>6.4.1 坐标系与坐标轴</h4><ol>
-<li><p>axis(limits)指定当前坐标区的范围</p>
-<ul>
-<li><p>[xmin xmax ymin ymax]</p>
-</li>
-<li><p>[xmin xmax ymin ymax zmin zmax]</p>
-</li>
-<li><p>[xmin xmax ymin ymax zmin zmax cmin cmax]</p>
-<ul>
-<li>c 代表着颜色刻度范围</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>axis命令的不同格式</p>
-</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729161142438.png" alt="image-20220729161142438"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729161145517.png" alt="image-20220729161145517"></p>
-<h4 id="6-4-2-图形注释"><a href="#6-4-2-图形注释" class="headerlink" title="6.4.2 图形注释"></a>6.4.2 图形注释</h4><ol>
-<li><p>fill( x,y,’color’)</p>
-<ul>
-<li>用指定的颜色填充数据 x,y 所构成的多边形。</li>
-<li>可以指定多个二维填充区。</li>
-<li>后面添加图形的属性名称和值。</li>
-</ul>
-</li>
-<li><p>tilte (‘string’)</p>
-<ul>
-<li>为图形添加标题</li>
-<li>可以在后面添加属性名称和值。</li>
-</ul>
-</li>
-<li><p>xlabel (‘string’)</p>
-<ul>
-<li>为 x 轴添加标注</li>
-<li>可以在后面添加属性名称和值</li>
-<li>ylabel zlabel</li>
-</ul>
-</li>
-<li><p>text( x,y,’string’)</p>
-<ul>
-<li>在指定位置显示字符串</li>
-<li>可以在后面添加属性名称和值</li>
-</ul>
-</li>
-<li><p>gtext (‘string’)</p>
-<ul>
-<li>用鼠标在图形的任意位置进行标注</li>
-<li>可以在后面添加属性名称和值</li>
-</ul>
-</li>
-</ol>
-<h4 id="6-4-3-文本的部分属性和值"><a href="#6-4-3-文本的部分属性和值" class="headerlink" title="6.4.3 文本的部分属性和值"></a>6.4.3 文本的部分属性和值</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729162254383.png" alt="image-20220729162254383"></p>
-<h4 id="6-4-4-添加图例"><a href="#6-4-4-添加图例" class="headerlink" title="6.4.4 添加图例"></a>6.4.4 添加图例</h4><ol>
-<li><p>legend(label1,…, labeln</p>
-<ul>
-<li>按照曲线顺序设置图例。</li>
-</ul>
-</li>
-<li><p>legend(subset, _ )</p>
-<ul>
-<li>只为一部分曲线设置图例。</li>
-</ul>
-</li>
-<li><p>legend(target, _)</p>
-<ul>
-<li>在指定坐标区域绘图。</li>
-</ul>
-</li>
-<li><p>legend( _,’Location’, lcn)</p>
-<ul>
-<li><p>指定图例位置</p>
-</li>
-<li><p>lcn 的取值</p>
-</li>
-<li><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729172307794.png" alt="image-20220729172307794"></p>
-</li>
-</ul>
-</li>
-<li><p>legend( _,’Orientation’, ornt)</p>
-<ul>
-<li><p>图例的显示方式（并排或垂直）</p>
-</li>
-<li><p>可以在后面添加属性名称和值 。</p>
-</li>
-<li><p>与文本属性类似</p>
-</li>
-<li><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729172301103.png" alt="image-20220729172301103"></p>
-</li>
-</ul>
-</li>
-</ol>
-<h4 id="6-4-5-练习"><a href="#6-4-5-练习" class="headerlink" title="6.4.5 练习"></a>6.4.5 练习</h4><h5 id="6-4-5-1-在当前坐标区上添加图例"><a href="#6-4-5-1-在当前坐标区上添加图例" class="headerlink" title="6.4.5.1 在当前坐标区上添加图例"></a>6.4.5.1 在当前坐标区上添加图例</h5><p>​    绘制两个线条并在当前坐标区上添加一个图例。将图例标签指定为legend函数的输入参数。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>,<span class="built_in">pi</span>);</span><br><span class="line">y1 = <span class="built_in">cos</span>(x);</span><br><span class="line"><span class="built_in">plot</span>(x,y1)</span><br><span class="line"><span class="built_in">hold</span> on </span><br><span class="line">y2 = <span class="built_in">cos</span>(<span class="number">2</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y2)</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;cos(x)&#x27;</span>,<span class="string">&#x27;cos(2x)&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>​    如图所示：</p>
-<img src="https://img-blog.csdnimg.cn/20210707142228738.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
-<p>​    如果在坐标区添加或删除数据序列，图例会相应地更新。</p>
-<p>​    创建数据序列时，可通过将 DisplayName 属性设置为名称-值对组来控制新数据序列的标签。如果不指定标签，则图例使用 ‘dataN’ 形式的标签。</p>
-<blockquote>
-<p>​    <strong>注意：如果不希望在坐标区中添加或删除数据序列时自动更新图例，可将图例的 AutoUpdate 属性设置为 ‘off’。</strong></p>
-</blockquote>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>,<span class="built_in">pi</span>);</span><br><span class="line">y1 = <span class="built_in">cos</span>(x);</span><br><span class="line"><span class="built_in">plot</span>(x,y1)</span><br><span class="line"><span class="built_in">hold</span> on </span><br><span class="line">y2 = <span class="built_in">cos</span>(<span class="number">2</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y2)</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;cos(x)&#x27;</span>,<span class="string">&#x27;cos(2x)&#x27;</span>)</span><br><span class="line">y3 = <span class="built_in">cos</span>(<span class="number">3</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y3,<span class="string">&#x27;DisplayName&#x27;</span>,<span class="string">&#x27;cos(3x)&#x27;</span>)</span><br><span class="line"><span class="built_in">hold</span> off</span><br></pre></td></tr></table></figure>
-
-<p>​    如图所示：</p>
-<img src="https://img-blog.csdnimg.cn/20210707142433849.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
-<p>​    删除图例。如图所示：</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;off&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20210707142553148.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
-<h5 id="6-4-5-2在特定坐标区上添加图例"><a href="#6-4-5-2在特定坐标区上添加图例" class="headerlink" title="6.4.5.2在特定坐标区上添加图例"></a>6.4.5.2在特定坐标区上添加图例</h5><p>​    从R2019b开始，可以使用tiledlayout和nexttile函数显示分块图。调用tiledlayout函数以创建一个 2×1 分块图布局。调用nexttile函数以创建坐标区对象ax1和ax2。在每个坐标区中对随机数据绘图。通过指定ax1作为legend的第一个输入参数，在上部绘图中添加一个图例。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">tiledlayout(<span class="number">2</span>,<span class="number">1</span>)</span><br><span class="line">y1 = <span class="built_in">rand</span>(<span class="number">3</span>);</span><br><span class="line">ax1 = nexttile; </span><br><span class="line"><span class="built_in">plot</span>(y1)</span><br><span class="line">y2 = <span class="built_in">rand</span>(<span class="number">5</span>);</span><br><span class="line">ax2 = nexttile; </span><br><span class="line"><span class="built_in">plot</span>(y2)</span><br><span class="line"><span class="built_in">legend</span>(ax1,&#123;<span class="string">&#x27;Line 1&#x27;</span>,<span class="string">&#x27;Line 2&#x27;</span>,<span class="string">&#x27;Line 3&#x27;</span>&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>绘制结果如图</p>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729164531443.png" alt="image-20220729164531443" style="zoom:50%;" />
-
-<h5 id="6-4-5-3-在执行绘图命令的过程中指定图例标签"><a href="#6-4-5-3-在执行绘图命令的过程中指定图例标签" class="headerlink" title="6.4.5.3 在执行绘图命令的过程中指定图例标签"></a>6.4.5.3 在执行绘图命令的过程中指定图例标签</h5><p>​    绘制两个线条。通过将 DisplayName 属性设置为所需的文本，在执行绘图命令的过程中指定图例标签。然后，添加一个图例。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>,<span class="built_in">pi</span>);</span><br><span class="line">y1 = <span class="built_in">cos</span>(x);</span><br><span class="line"><span class="built_in">plot</span>(x,y1,<span class="string">&#x27;DisplayName&#x27;</span>,<span class="string">&#x27;cos(x)&#x27;</span>)</span><br><span class="line"><span class="built_in">hold</span> on </span><br><span class="line">y2 = <span class="built_in">cos</span>(<span class="number">2</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y2,<span class="string">&#x27;DisplayName&#x27;</span>,<span class="string">&#x27;cos(2x)&#x27;</span>)</span><br><span class="line"><span class="built_in">hold</span> off</span><br><span class="line"><span class="built_in">legend</span></span><br></pre></td></tr></table></figure>
-
-<p>​    如图所示：</p>
-<img src="https://img-blog.csdnimg.cn/20210707142907278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
-<h5 id="6-4-5-4-图例位置和列数"><a href="#6-4-5-4-图例位置和列数" class="headerlink" title="6.4.5.4 图例位置和列数"></a>6.4.5.4 图例位置和列数</h5><p>​    绘制四个线条。在坐标区的西北角创建一个图例。使用NumColumns属性指定图例的列数。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>,<span class="built_in">pi</span>);</span><br><span class="line">y1 = <span class="built_in">cos</span>(x);</span><br><span class="line"><span class="built_in">plot</span>(x,y1)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line">y2 = <span class="built_in">cos</span>(<span class="number">2</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y2)</span><br><span class="line">y3 = <span class="built_in">cos</span>(<span class="number">3</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y3)</span><br><span class="line">y4 = <span class="built_in">cos</span>(<span class="number">4</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y4)</span><br><span class="line"><span class="built_in">hold</span> off</span><br><span class="line"><span class="built_in">legend</span>(&#123;<span class="string">&#x27;cos(x)&#x27;</span>,<span class="string">&#x27;cos(2x)&#x27;</span>,<span class="string">&#x27;cos(3x)&#x27;</span>,<span class="string">&#x27;cos(4x)&#x27;</span>&#125;,<span class="string">&#x27;Location&#x27;</span>,<span class="string">&#x27;northwest&#x27;</span>,<span class="string">&#x27;NumColumns&#x27;</span>,<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20210707143016276.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:50%;" />
-
-<p>​    默认情况下，图例项逐列从上到下排列。要逐行从左到右排列图例项，请将 Orientation 属性设置为 ‘horizontal’。</p>
-<h5 id="6-4-5-5-在分块图布局中显示共享图例"><a href="#6-4-5-5-在分块图布局中显示共享图例" class="headerlink" title="6.4.5.5 在分块图布局中显示共享图例"></a>6.4.5.5 在分块图布局中显示共享图例</h5><p>​    当要在两个或多个图之间共享一个图例时，可以在布局的一个单独图块中显示该图例。在一个分块图布局中创建三个绘图。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tiledlayout(<span class="number">2</span>,<span class="number">2</span>);</span><br><span class="line">nexttile</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">rand</span>(<span class="number">5</span>))</span><br><span class="line">nexttile</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">rand</span>(<span class="number">5</span>))</span><br><span class="line">nexttile</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">rand</span>(<span class="number">5</span>))</span><br></pre></td></tr></table></figure>
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729170358840.png" alt="image-20220729170358840" style="zoom:50%;" />   
-
-<p> 添加一个共享图例，并将其移至第四个图块。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">tiledlayout(<span class="number">2</span>,<span class="number">2</span>);</span><br><span class="line">nexttile</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">rand</span>(<span class="number">5</span>))</span><br><span class="line">nexttile</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">rand</span>(<span class="number">5</span>))</span><br><span class="line">nexttile</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">rand</span>(<span class="number">5</span>))</span><br><span class="line">lgd = <span class="built_in">legend</span>;</span><br><span class="line">lgd.Layout.Tile = <span class="number">4</span>;</span><br></pre></td></tr></table></figure>
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729170336644.png" alt="image-20220729170336644" style="zoom: 50%;" />
-
-<h5 id="6-4-5-6-在图例中包含部分图形对象"><a href="#6-4-5-6-在图例中包含部分图形对象" class="headerlink" title="6.4.5.6 在图例中包含部分图形对象"></a>6.4.5.6 在图例中包含部分图形对象</h5><p>​    如果不想将绘制的所有图形对象都包含在图例中，可以指定要包含的图形对象。</p>
-<p>​    绘制三个线条并返回创建的 Line 对象。创建只包含其中两条线的图例。将第一个输入参数指定为要包含的 Line 对象的向量。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>,<span class="built_in">pi</span>);</span><br><span class="line">y1 = <span class="built_in">cos</span>(x);</span><br><span class="line">p1 = <span class="built_in">plot</span>(x,y1);</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line">y2 = <span class="built_in">cos</span>(<span class="number">2</span>*x);</span><br><span class="line">p2 = <span class="built_in">plot</span>(x,y2);</span><br><span class="line">y3 = <span class="built_in">cos</span>(<span class="number">3</span>*x);</span><br><span class="line">p3 = <span class="built_in">plot</span>(x,y3);</span><br><span class="line"><span class="built_in">hold</span> off</span><br><span class="line"><span class="built_in">legend</span>([p1 p3],&#123;<span class="string">&#x27;First&#x27;</span>,<span class="string">&#x27;Third&#x27;</span>&#125;)</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20210707143353362.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
-<h5 id="6-4-5-7-为图例添加标题"><a href="#6-4-5-7-为图例添加标题" class="headerlink" title="6.4.5.7 为图例添加标题"></a>6.4.5.7 为图例添加标题</h5><p>​    绘制两个线条并创建一个图例。然后为图例添加标题。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>,<span class="built_in">pi</span>);</span><br><span class="line">y1 = <span class="built_in">cos</span>(x);</span><br><span class="line"><span class="built_in">plot</span>(x,y1)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line">y2 = <span class="built_in">cos</span>(<span class="number">2</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y2)</span><br><span class="line"><span class="built_in">hold</span> off</span><br><span class="line">lgd = <span class="built_in">legend</span>(<span class="string">&#x27;cos(x)&#x27;</span>,<span class="string">&#x27;cos(2x)&#x27;</span>);</span><br><span class="line">title(lgd,<span class="string">&#x27;My Legend Title&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20210707143500899.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
-<h5 id="6-4-5-8-删除图例背景"><a href="#6-4-5-8-删除图例背景" class="headerlink" title="6.4.5.8 删除图例背景"></a>6.4.5.8 删除图例背景</h5><p>​    绘制两个线条并在坐标区左下角创建一个图例。然后，删除图例的背景和轮廓。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>,<span class="built_in">pi</span>);</span><br><span class="line">y1 = <span class="built_in">cos</span>(x);</span><br><span class="line"><span class="built_in">plot</span>(x,y1)</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line">y2 = <span class="built_in">cos</span>(<span class="number">2</span>*x);</span><br><span class="line"><span class="built_in">plot</span>(x,y2)</span><br><span class="line"><span class="built_in">hold</span> off</span><br><span class="line"><span class="built_in">legend</span>(&#123;<span class="string">&#x27;cos(x)&#x27;</span>,<span class="string">&#x27;cos(2x)&#x27;</span>&#125;,<span class="string">&#x27;Location&#x27;</span>,<span class="string">&#x27;southwest&#x27;</span>)</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;boxoff&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20210707143617546.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom: 67%;" />
-
-<h5 id="6-4-5-9-修改图例外观"><a href="#6-4-5-9-修改图例外观" class="headerlink" title="6.4.5.9 修改图例外观"></a>6.4.5.9 修改图例外观</h5><p>​    通过设置Legend属性来修改图例外观。创建图例时，可以在 legend 命令中使用名称-值对组来设置属性。还可以在创建图例后使用 Legend 对象来设置属性。</p>
-<p>​    绘制四行随机数据。创建图例并将 Legend 对象赋给变量 lgd。使用名称-值对组设置 FontSize 和 TextColor 属性。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rdm = <span class="built_in">rand</span>(<span class="number">4</span>);</span><br><span class="line"><span class="built_in">plot</span>(rdm)</span><br><span class="line">lgd = <span class="built_in">legend</span>(&#123;<span class="string">&#x27;Line 1&#x27;</span>,<span class="string">&#x27;Line 2&#x27;</span>,<span class="string">&#x27;Line 3&#x27;</span>,<span class="string">&#x27;Line 4&#x27;</span>&#125;,<span class="string">&#x27;FontSize&#x27;</span>,<span class="number">12</span>,<span class="string">&#x27;TextColor&#x27;</span>,<span class="string">&#x27;blue&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20210707143724812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">lgd = Legend (<span class="string">&#x27;Line 1&#x27;</span>,<span class="string">&#x27;Line 2&#x27;</span>, <span class="string">&#x27;Line 3&#x27;</span>, <span class="string">&#x27;Line 4&#x27;</span>) with <span class="keyword">properties</span>:</span><br><span class="line">String: &#123;<span class="string">&#x27;Line 1&#x27;</span>  <span class="string">&#x27;Line 2&#x27;</span>  <span class="string">&#x27;Line 3&#x27;</span>  <span class="string">&#x27;Line 4&#x27;</span>&#125;</span><br><span class="line">Location: <span class="string">&#x27;northeast&#x27;</span></span><br><span class="line">Orientation: <span class="string">&#x27;vertical&#x27;</span></span><br><span class="line">FontSize: <span class="number">12</span></span><br><span class="line">Position: [<span class="number">0.7088</span> <span class="number">0.7034</span> <span class="number">0.1778</span> <span class="number">0.1957</span>]</span><br><span class="line">Units: <span class="string">&#x27;normalized&#x27;</span></span><br><span class="line">Show all <span class="keyword">properties</span></span><br></pre></td></tr></table></figure>
-
-<p>​    创建图例后，通过引用lgd来修改图例。使用对象圆点属性名称表示法设置NumColumns属性。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lgd.NumColumns = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/2021070714384395.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70" alt="img" style="zoom:67%;" />
-
-<h4 id="6-4-6-网格线"><a href="#6-4-6-网格线" class="headerlink" title="6.4.6 网格线"></a>6.4.6 网格线</h4><ol>
-<li>grid on ：为当前坐标区添加主网格线。</li>
-<li>grid off ：删除当前坐标区所有网格线。</li>
-<li>grid ：切换主网格线可见性。</li>
-<li>grid minor ：切换次网格线的可见性。</li>
-<li>gird(target,_ ) ：对 target 指定的坐标区设置网格线。</li>
-</ol>
-<h3 id="6-5-条形图"><a href="#6-5-条形图" class="headerlink" title="6.5 条形图"></a>6.5 条形图</h3><ol>
-<li><p>二维条形图</p>
-<ul>
-<li><p>bar ：竖直条形图。</p>
-</li>
-<li><p>barh ：水平条形图。</p>
-</li>
-</ul>
-</li>
-<li><p>三维条形图</p>
-<ul>
-<li>bar3 ：竖直条形图。</li>
-<li>bar3h ：水平条形图。</li>
-</ul>
-</li>
-</ol>
-<h4 id="6-5-1-指令"><a href="#6-5-1-指令" class="headerlink" title="6.5.1 指令"></a>6.5.1 指令</h4><ol>
-<li>bar(y) 创建一个条形图， y 中的每个元素对应一个条形。如果 y 是 m × n 的矩阵，则 bar 创建 m 组每组包含 n个条形。</li>
-<li>bar( x,y )在横坐标 x 所指定的位置绘制 y ，要求 x 为严格单调增的向量。</li>
-<li>bar( _,width) 设置条形的相对宽度 width.</li>
-<li>bar( _,style) 指定条形组的样式 style.</li>
-<li>bar( _,color) 设置条形的颜色。</li>
-<li>b&#x3D;bar( _ ) 返回一个或多个 Bar 对象，之后可以用 b 来设置条形的属性</li>
-<li>可以在后面添加属性名称和值。</li>
-</ol>
-<h4 id="6-5-2-条形的部分属性和值"><a href="#6-5-2-条形的部分属性和值" class="headerlink" title="6.5.2 条形的部分属性和值"></a>6.5.2 条形的部分属性和值</h4><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729231222107.png" alt="image-20220729231222107" style="zoom:80%;" />
-
-<h4 id="6-5-3-练习"><a href="#6-5-3-练习" class="headerlink" title="6.5.3 练习"></a>6.5.3 <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45492560/article/details/106344251">练习</a></h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/20200525224510426.png" alt="在这里插入图片描述"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">y=[5 3 2 9;4 7 2 7;1 5 7 3];</span><br><span class="line">subplot(2,2,1)</span><br><span class="line">bar(y)</span><br><span class="line">x=[5 9 11];</span><br><span class="line">subplot(2,2,2)</span><br><span class="line">bar3(x,y)</span><br><span class="line">subplot(2,2,3)</span><br><span class="line">bar(x,y,<span class="string">&#x27;grouped&#x27;</span>)</span><br><span class="line">subplot(2,2,4)</span><br><span class="line">bar(rand(2,3),0.75,<span class="string">&#x27;stack&#x27;</span>)</span><br><span class="line">12345678910</span><br></pre></td></tr></table></figure>
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/20200525224541164.png" alt="在这里插入图片描述" style="zoom:50%;" />
-bar（y,1）直方条会重叠，此时可以将x显示范围设置成0.5-3.5，ticklabel也可以设置
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/20200525224831678.png" alt="在这里插入图片描述" style="zoom:50%;" />另一参考
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">bar(y) 以y中的值为长度画一个长柱 %出来了个正方形。。</span><br><span class="line">bar(x,y) 该函数在指定的横坐标x上画出y</span><br><span class="line">bar(x,y,width) 设置宽度 width 设置柱的宽度 默认值为0.8 大于1会相互重叠</span><br><span class="line">bar(...,<span class="string">&#x27;style&#x27;</span>)   默认为group 可以设定为<span class="string">&#x27;stack&#x27;</span> 就是把y的每行摞起来</span><br><span class="line">bar(...,<span class="string">&#x27;bar_color&#x27;</span>) 定义柱的颜色</span><br><span class="line">函数barh()可以绘制水平柱状图，用法与bar()相同</span><br><span class="line"></span><br><span class="line">1234567</span><br><span class="line">figure;</span><br><span class="line">x=[1 3 5 9 3 2 6;4 5 2 6 8 9 1;3 4 5 6 7 8 9]<span class="string">&#x27;;</span></span><br><span class="line"><span class="string">subplot(121);</span></span><br><span class="line"><span class="string">barh(1:7,x);</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">subplot(122);</span></span><br><span class="line"><span class="string">barh(1:7,x,&#x27;</span>stack<span class="string">&#x27;)</span></span><br><span class="line"><span class="string">1234567</span></span><br></pre></td></tr></table></figure>
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/2020052522515270.png" alt="在这里插入图片描述" style="zoom:50%;" />
-这个示例展示了3组，每组5个barseries对象的直方图。由于所有的barseries对象共用同一个基线，所以你可以使用任何一个对象去设置其BaseLine属性。这个例子使用返回h的第一个句柄。
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Y = randn(3,5);</span><br><span class="line">h = bar(Y);</span><br><span class="line"><span class="built_in">set</span>(get(h(1),<span class="string">&#x27;BaseLine&#x27;</span>),<span class="string">&#x27;LineWidth&#x27;</span>,2,<span class="string">&#x27;LineStyle&#x27;</span>,<span class="string">&#x27;:&#x27;</span>)</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/8370d32a2370410d95201deb8f2a4ade.png" alt="在这里插入图片描述" style="zoom:50%;" />
-
-<p><strong>补充：改变柱体的颜色</strong><br>如果要调节柱体的颜色该怎么办？<strong>当bar类型较少</strong>时，一般可调节柱体的属性值，</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;edgecolor&#x27;</span></span><br><span class="line"><span class="string">&#x27;facecolor&#x27;</span></span><br><span class="line">12</span><br></pre></td></tr></table></figure>
-
-<p>可考虑下面方法。<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45492560/article/details/108700368">调节bar的颜色参考</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Y = randn(3,5);</span><br><span class="line">h = bar(Y);</span><br><span class="line"><span class="built_in">set</span>(get(h(1),<span class="string">&#x27;BaseLine&#x27;</span>),<span class="string">&#x27;LineWidth&#x27;</span>,2,<span class="string">&#x27;LineStyle&#x27;</span>,<span class="string">&#x27;:&#x27;</span>)</span><br><span class="line"></span><br><span class="line">color_data = colormap(summer); % Change the color scheme</span><br><span class="line"></span><br><span class="line">% colormap通常用来修饰三维图形，对于二维线图不起作用。</span><br><span class="line">% 所以考虑循环调用</span><br><span class="line"><span class="keyword">for</span> i = 1:5</span><br><span class="line">    h(1,i).FaceColor = color_data(1+51*i,:);</span><br><span class="line">    h(1,i).EdgeColor = color_data(1+51*i,:);</span><br><span class="line">end</span><br><span class="line">123456789101112</span><br></pre></td></tr></table></figure>
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/a31055d7b4ca488389f97cbaffbe6c2b.png" alt="在这里插入图片描述" style="zoom:50%;" />
-
-<p><strong>补充：将x轴移至原点处</strong><br>由于基线的偏移，这时候x轴在最下方可能会影响感官，也可以将x轴偏移至 y &#x3D; 0 处。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">Y = randn(3,5);</span><br><span class="line">h = bar(Y);</span><br><span class="line"><span class="built_in">set</span>(get(h(1),<span class="string">&#x27;BaseLine&#x27;</span>),<span class="string">&#x27;LineWidth&#x27;</span>,2,<span class="string">&#x27;LineStyle&#x27;</span>,<span class="string">&#x27;:&#x27;</span>)</span><br><span class="line"></span><br><span class="line">color_data = colormap(summer); % Change the color scheme</span><br><span class="line"></span><br><span class="line">% colormap通常用来修饰三维图形，对于二维线图不起作用。</span><br><span class="line">% 所以考虑循环调用</span><br><span class="line"><span class="keyword">for</span> i = 1:5</span><br><span class="line">    h(1,i).FaceColor = color_data(1+51*i,:);</span><br><span class="line">    h(1,i).EdgeColor = color_data(1+51*i,:);</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">ax = gca;  % current axes</span><br><span class="line">ax.XAxisLocation = <span class="string">&#x27;origin&#x27;</span>;  </span><br><span class="line">ax.YAxisLocation = <span class="string">&#x27;origin&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span>(gcf,<span class="string">&#x27;color&#x27;</span>,<span class="string">&#x27;w&#x27;</span>)</span><br><span class="line">box off;</span><br><span class="line">% 将x轴的位置调整</span><br><span class="line">% YAxisLocation可调属性值：   <span class="string">&#x27;bottom&#x27;</span> （默认） | <span class="string">&#x27;top&#x27;</span> | <span class="string">&#x27;origin&#x27;</span></span><br><span class="line">% XAxisLocation可调属性值：   <span class="string">&#x27;left&#x27;</span> （默认） | <span class="string">&#x27;right&#x27;</span> | <span class="string">&#x27;origin&#x27;</span></span><br><span class="line">12345678910111213141516171819202122</span><br></pre></td></tr></table></figure>
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/0d3af3fffa4c42e193636fde99125d05.png" alt="在这里插入图片描述" style="zoom: 50%;" />
-
-<h3 id="6-6-区域图"><a href="#6-6-区域图" class="headerlink" title="6.6 区域图"></a>6.6 区域图</h3><h4 id="6-6-1-指令"><a href="#6-6-1-指令" class="headerlink" title="6.6.1 指令"></a>6.6.1 指令</h4><ol>
-<li>area(x) 与 plot(x) 一样，但将曲线下方区域填充颜色。</li>
-<li>area( x,y 与 plot( x,y 一样，但将曲线下方区域填充颜色。</li>
-<li>area( x,Y )：矩阵 Y 的第一行对向量 x 绘图，然后依次是下一行与前面所有行值的和对向量 x 的绘图，每个区域各有颜色。</li>
-<li>area( _, basevalue) 指定区域填充的基值，默认为 0.</li>
-<li>ar &#x3D;area( _ )返回一个或多个 Area 对象，接下来可以通过 ar 改变属性值。</li>
-<li>可以在后面添加属性名称和值。</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729232647266.png" alt="image-20220729232647266"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729232650557.png" alt="image-20220729232650557"></p>
-<h4 id="6-6-2-区域图的部分属性和值"><a href="#6-6-2-区域图的部分属性和值" class="headerlink" title="6.6.2 区域图的部分属性和值"></a>6.6.2 <a target="_blank" rel="noopener" href="https://ww2.mathworks.cn/help/matlab/ref/matlab.graphics.chart.primitive.area-properties.html">区域图的部分属性和值</a></h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729233048010.png" alt="image-20220729233048010"></p>
-<h3 id="6-7-饼图和直方图"><a href="#6-7-饼图和直方图" class="headerlink" title="6.7 饼图和直方图"></a>6.7 饼图和直方图</h3><h4 id="6-7-1-饼图"><a href="#6-7-1-饼图" class="headerlink" title="6.7.1 饼图"></a>6.7.1 饼图</h4><ol>
-<li><p>pie ：二维饼图</p>
-<ul>
-<li>pie(x) 使用 x 中的数据绘制饼图。</li>
-<li>pie( x,explode 将扇区从饼图偏移一定位置。</li>
-<li>pie( x,label 指定扇区的文本标签。</li>
-<li>p&#x3D;pie( _ ) 返回一个由补片和文本图形对象组成的向量。</li>
-</ul>
-</li>
-<li><p>pie3 ：三维饼图</p>
-</li>
-</ol>
-<h4 id="6-7-2-直方图"><a href="#6-7-2-直方图" class="headerlink" title="6.7.2 直方图"></a>6.7.2 直方图</h4><ul>
-<li><p>histogram ：直角坐标系下的直方图</p>
-</li>
-<li><p>polarhistogram ：极坐标系下的直方图</p>
-</li>
-</ul>
-<h3 id="6-8-含误差条的线图"><a href="#6-8-含误差条的线图" class="headerlink" title="6.8 含误差条的线图"></a>6.8 含误差条的线图</h3><ol>
-<li>errorbar(y,err)创建 y 中数据的线图，并在每个数据点绘制一个垂直误差条， err 中的值确定数据点上方和下方的每个误差条的长度。总误差条的长度是 err 值的两倍。</li>
-<li>errorbar(x,y,err) 横坐标是 x.</li>
-<li>errorbar （x,y,neg,pos )neg 确定数据点下方误差条的长度， pos 确定数据点上方误差条的长度。</li>
-<li>errorbar ( _ ,ornt） 设置误差条的方向，horizontal 为水平， vertical 为竖直（默认值），both 为水平和竖直。</li>
-<li>可以在后面添加线性、标记、颜色或属性名称和值。</li>
-<li>e&#x3D; errorbar ( _ ) 返回一个 Errorbar 对象，之后可以用 e 修改其属性。</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729233607382.png" alt="image-20220729233607382"></p>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729233749899.png" alt="image-20220729233749899" style="zoom:67%;" />
-
-<h3 id="6-9-针状图stem"><a href="#6-9-针状图stem" class="headerlink" title="6.9 针状图stem"></a>6.9 针状图stem</h3><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234214566.png" alt="image-20220729234214566" style="zoom:33%;" />
-
-<h3 id="6-10-阶梯图stairs"><a href="#6-10-阶梯图stairs" class="headerlink" title="6.10 阶梯图stairs"></a>6.10 阶梯图stairs</h3><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234242198.png" alt="image-20220729234242198" style="zoom: 33%;" />
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234252425.png" alt="image-20220729234252425" style="zoom: 33%;" />
-
-<h3 id="6-11-罗盘图compass"><a href="#6-11-罗盘图compass" class="headerlink" title="6.11 罗盘图compass"></a>6.11 罗盘图compass</h3><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234339111.png" alt="image-20220729234339111" style="zoom: 50%;" />
-
-<h3 id="6-12-羽毛图"><a href="#6-12-羽毛图" class="headerlink" title="6.12 羽毛图"></a>6.12 羽毛图</h3><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234350549.png" alt="image-20220729234350549" style="zoom:50%;" />
-
-<h3 id="6-13-箭头图quiver"><a href="#6-13-箭头图quiver" class="headerlink" title="6.13 箭头图quiver"></a>6.13 箭头图quiver</h3><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234356597.png" alt="image-20220729234356597" style="zoom:50%;" />
-
-<h2 id="7-三维绘图"><a href="#7-三维绘图" class="headerlink" title="7 三维绘图"></a>7 三维绘图</h2><h3 id="7-1-基本绘图函数"><a href="#7-1-基本绘图函数" class="headerlink" title="7.1 基本绘图函数"></a>7.1 基本绘图函数</h3><h4 id="7-1-1-曲线绘图"><a href="#7-1-1-曲线绘图" class="headerlink" title="7.1.1 曲线绘图"></a>7.1.1 曲线绘图</h4><ol>
-<li>plot3</li>
-</ol>
-<p>plot3 函数是二维绘图函数 plot 的扩展，因此两者的使用格式也基本相同，只是要在参数中添加第三维的信息。不同格式如下：</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730000811506.png" alt="image-20220730000811506"></p>
-<p>示例：</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730000818240.png" alt="image-20220730000818240"></p>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730000822153.png" alt="image-20220730000822153" style="zoom:67%;" />
-
-<ol start="2">
-<li><p>ezplot3（不推荐）</p>
-</li>
-<li><p>fplot3</p>
-</li>
-</ol>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730000915554.png" alt="image-20220730000915554"></p>
-<ul>
-<li>fplot3( funx,funy,funz )在默认区间 [-5,5]（对于 t ）绘制由 x&#x3D; funx (t), funy(t)和z&#x3D; funz(t)定义的参数化曲线。</li>
-<li>可以在 tinterval 所指定的区间绘图，格式为 [tmin tmax]</li>
-<li>可以设置线型、标记符号和线条颜色。</li>
-<li>可以添加属性名称和值。</li>
-</ul>
-<h4 id="7-1-2-三维网格函数"><a href="#7-1-2-三维网格函数" class="headerlink" title="7.1.2 三维网格函数"></a>7.1.2 三维网格函数</h4><ul>
-<li><p>mesh 函数可以用来绘制网格曲面图。</p>
-</li>
-<li><p>mesh 函数的几种不同格式</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730001428204.png" alt="image-20220730001428204"></p>
-</li>
-<li><p>mesh( x,y,z )创建一个网格图，该网格图为三维曲面，边有颜色，面无颜色。 x 和 y 定义一个 x y 平面， z 的值定义网格上方的高度，边的颜色由 z 的值而定。</p>
-</li>
-<li><p>示例</p>
-</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730001511360.png" alt="image-20220730001511360"></p>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730001517046.png" alt="image-20220730001517046" style="zoom:67%;" />
-
-<h5 id="7-1-2-1-网格生成-meshgrid"><a href="#7-1-2-1-网格生成-meshgrid" class="headerlink" title="7.1.2.1 网格生成 meshgrid"></a>7.1.2.1 网格生成 meshgrid</h5><ul>
-<li>meshgrid 可以用来生成二维或三维的网格。</li>
-<li>[X, Y]&#x3D;meshgrid (x,y )：向量 x 指定 x 坐标的取值范围，向量 y 所指定 y 坐标的取值范围，两两组合后得到一系列方格点坐标。输出 X 是所有点的横坐标，输出 Y 是所有点的纵坐标。</li>
-<li>[X,Y]&#x3D; meshigrid (x) 等价于 [X,Y]&#x3D; meshgrid (x,x)</li>
-<li>[X,Y, Z]&#x3D;meshgrid (x,y,z) 生成三维网格。</li>
-</ul>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730002330490.png" alt="image-20220730002330490" style="zoom:80%;" />
-
-<h5 id="7-1-2-2-mesh函数的其他不同格式"><a href="#7-1-2-2-mesh函数的其他不同格式" class="headerlink" title="7.1.2.2 mesh函数的其他不同格式"></a>7.1.2.2 mesh函数的其他不同格式</h5><ul>
-<li><p>mesh(z) 创建一个网格图，将行号和列号作为 x 和 y 坐标。</p>
-</li>
-<li><p>mesh( _,c) 指定边的颜色。</p>
-</li>
-<li><p>可以在指定坐标区绘图。</p>
-</li>
-<li><p>可以添加属性名称和值。</p>
-</li>
-<li><p>可以返回一个曲面对象，用来在后面修改属性。</p>
-</li>
-<li><p>可以使用 hidden 函数来调整网格的透明状态。</p>
-<ul>
-<li>hidden on&#x2F;off ：网格不透明 透明</li>
-<li>hidden on 和 off 之间切换</li>
-<li><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730004138903.png" alt="image-20220730004138903" style="zoom:67%;" /></li>
-</ul>
-</li>
-<li><p>colorbar 函数可以用来添加颜色条。</p>
-</li>
-<li><p>曲面的部分属性和值</p>
-</li>
-</ul>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730002931089.png" alt="image-20220730002931089" style="zoom:67%;" />
-
-<ul>
-<li>示例：</li>
-</ul>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">u=<span class="number">-7</span>:<span class="number">0.1</span>:<span class="number">7</span>;</span><br><span class="line">v=<span class="number">-7</span>:<span class="number">0.1</span>:<span class="number">7</span>;</span><br><span class="line">[x,y]=<span class="built_in">meshgrid</span>(u,v);</span><br><span class="line">z=(x.^<span class="number">2</span>+y.^<span class="number">2</span>)./<span class="number">5</span>;</span><br><span class="line">meshc(x,y,z);</span><br></pre></td></tr></table></figure>
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730004304318.png" alt="image-20220730004304318" style="zoom:50%;" />
-
-<h5 id="7-1-2-3-mesh函数的拓展"><a href="#7-1-2-3-mesh函数的拓展" class="headerlink" title="7.1.2.3 mesh函数的拓展"></a>7.1.2.3 mesh函数的拓展</h5><ol>
-<li>meshz函数可以在网格图下方显示帷幕。</li>
-<li>meshc 函数可以在网格图下面显示等高线图。</li>
-</ol>
-<h5 id="7-1-2-4-ezmesh-（不推荐）"><a href="#7-1-2-4-ezmesh-（不推荐）" class="headerlink" title="7.1.2.4 ezmesh （不推荐）"></a>7.1.2.4 ezmesh （不推荐）</h5><h5 id="7-1-2-5-fmesh"><a href="#7-1-2-5-fmesh" class="headerlink" title="7.1.2.5 fmesh"></a>7.1.2.5 fmesh</h5><ul>
-<li>格式如下</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730004635274.png" alt="image-20220730004635274"></p>
-<ul>
-<li><p>fmesh ( 在默认区间 5,5] 上绘制 z&#x3D;f( x,y 的网格图。</p>
-</li>
-<li><p>xyinterval 用来限制 x 和 y 的区间， x 和 y 使用相同区间 [min max]或使用不同区间 [xmin xmax ymin ymax]</p>
-</li>
-<li><p>fmesh (funx,funy,funz) 在默认区间 [-5,5]（对于 u 和 v绘制由 x&#x3D;funx (u,v） y&#x3D; funy (u,v) 和 z&#x3D; funz (u,v) 所定义的参数化网格。</p>
-</li>
-<li><p>uvinterval 用来指定参数取值范围。</p>
-</li>
-<li><p>可以设置线型、标记符号和颜色。</p>
-</li>
-<li><p>可以添加属性名称和值。</p>
-</li>
-<li><p>可以返回对象 fs 用来查询和修改属性。</p>
-</li>
-</ul>
-<h4 id="7-1-3-三维曲面函数"><a href="#7-1-3-三维曲面函数" class="headerlink" title="7.1.3 三维曲面函数"></a>7.1.3 三维曲面函数</h4><ul>
-<li><p>曲面图是在网格图的基础上，把小网格之间用颜色填充。</p>
-</li>
-<li><p>surf 的用法与 mesh 类似。区别在于 surf 的边是黑色的，但是曲面的颜色是由高度决定的。</p>
-</li>
-<li><p>surf 函数的几种不同格式。<br> <img src="/../../AppData/Roaming/Typora/typora-user-images/image-20220730005108857.png" alt="image-20220730005108857"></p>
-</li>
-<li><p>示例</p>
-</li>
-</ul>
- <img src="../../AppData/Roaming/Typora/typora-user-images/image-20220730005142599.png" alt="image-20220730005142599" style="zoom:66%;" />
-
-<h5 id="7-1-3-1-surf函数的拓展"><a href="#7-1-3-1-surf函数的拓展" class="headerlink" title="7.1.3.1 surf函数的拓展"></a>7.1.3.1 surf函数的拓展</h5><ol>
-<li>surfc 绘制曲面图下的等高线图。</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005329652.png" alt="image-20220730005329652" style="zoom:67%;" />
-
-<ol start="2">
-<li>surfl 绘制一个带有光照的曲面图。</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005339660.png" alt="image-20220730005339660" style="zoom:67%;" />
-
-<ol start="3">
-<li>ezsurf 可以用来绘制符号函数的曲面图，不推荐使用。</li>
-<li>ezsurfc 可以用来绘制符号函数的曲面图，并在下方显示等高线图，不推荐使用。</li>
-<li>fsurf 函数可以用来绘制参数化函数的曲面图。使用方式与 fmesh 类似。</li>
-<li>fsurf 函数的几种不同格式<br><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005518175.png" alt="image-20220730005518175"></li>
-</ol>
-<h4 id="7-1-4-柱面cylinder与球面sphere"><a href="#7-1-4-柱面cylinder与球面sphere" class="headerlink" title="7.1.4 柱面cylinder与球面sphere"></a>7.1.4 柱面cylinder与球面sphere</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005935349.png" alt="image-20220730005935349" style="zoom:50%;" /><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005949722.png" alt="image-20220730005949722" style="zoom:50%;" /></p>
-<h4 id="7-1-5-等高线图"><a href="#7-1-5-等高线图" class="headerlink" title="7.1.5 等高线图"></a>7.1.5 等高线图</h4><h3 id="7-2-三维图形的修饰处理"><a href="#7-2-三维图形的修饰处理" class="headerlink" title="7.2 三维图形的修饰处理"></a>7.2 三维图形的修饰处理</h3><h4 id="7-2-1-视角处理"><a href="#7-2-1-视角处理" class="headerlink" title="7.2.1 视角处理"></a>7.2.1 视角处理</h4><h4 id="7-2-2-颜色处理"><a href="#7-2-2-颜色处理" class="headerlink" title="7.2.2 颜色处理"></a>7.2.2 颜色处理</h4><h4 id="7-2-3-光照处理"><a href="#7-2-3-光照处理" class="headerlink" title="7.2.3 光照处理"></a>7.2.3 光照处理</h4><p><a target="_blank" rel="noopener" href="https://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/Matlab%E4%B8%89%E7%BB%B4%E7%BB%98%E5%9B%BE.pdf">7.1.4-7.2.3参考资料</a></p>
-<p>网课看p49</p>
-<h2 id="8-数列与极限"><a href="#8-数列与极限" class="headerlink" title="8 数列与极限"></a>8 数列与极限</h2><h3 id="8-1-数列"><a href="#8-1-数列" class="headerlink" title="8.1 数列"></a>8.1 数列</h3><h4 id="8-1-1-求和"><a href="#8-1-1-求和" class="headerlink" title="8.1.1 求和"></a>8.1.1 求和</h4><ol>
-<li><p>s&#x3D;sum(A) 返回 A 沿大小不等于 1 的第一个数组维度的元素之和。</p>
-<ul>
-<li><p>如果 A 是向量，则返回元素之和。</p>
-<p><img src="/../../AppData/Roaming/Typora/typora-user-images/image-20220730162939127.png" alt="image-20220730162939127"></p>
-</li>
-<li><p>如果 A 是矩阵，则返回包含每列总和的行向量。</p>
-</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730162954456.png" alt="image-20220730162954456"></p>
-<ul>
-<li>如果 A 是多维数组，则沿大小不等于 1 的第一个数组维度计算，将这些元素视为向量。计算结果中，该维度变成 1 ，其余维度的大小保持不变。</li>
-</ul>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163006650.png" alt="image-20220730163006650" style="zoom:50%;" />
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163016789.png" alt="image-20220730163016789" style="zoom: 67%;" />
-
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163030422.png" alt="image-20220730163030422" style="zoom: 50%;" />
-</li>
-<li><p>s&#x3D;sum( A,’all’) 计算 A 中所有元素的总和。此语法适用于 R2018b 及更高版本。不支持的可以用 sum 嵌套。</p>
-</li>
-<li><p>s&#x3D;sum( A,dim 沿维度 dim 返回总和。如果 A 是矩阵，那么 sum(A,2) 计算行和。</p>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163153052.png" alt="image-20220730163153052" style="zoom: 67%;" />
-</li>
-<li><p>s&#x3D;sum( A,vecdim )根据向量 vecdim 中所指定的维度对 A 的元素求和。如果 A 是矩阵，那么 sum(A,[1 2])是求 A 中所有元素的总和。</p>
-</li>
-<li><p>s&#x3D;sum( _, nanflag) 可以选择计算中是否包括 NaN 值， includenan 会包括， omitnan 则不包括。</p>
-</li>
-<li><p>nansum 函数可以计算不包含 NaN 值的其他元素的和，与 sum( _,’ omitnan’) 等价。</p>
-</li>
-<li><p>cumsum 函数可以用来计算累积和。</p>
-<ul>
-<li>cumsum ( A)：与 sum(A) 类似。</li>
-</ul>
-<p>   <img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163627911.png" alt="image-20220730163627911"></p>
-<ul>
-<li><p>cumsum( A,dim )：与 sum( A,dim )类似。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163647339.png" alt="image-20220730163647339"></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163720918.png" alt="image-20220730163720918"></p>
-</li>
-<li><p>cumsum (direction)：按照指定方向计算累积和。默认为 ’ reverse ’为倒序。</p>
-</li>
-<li><p>cumsum (  _, nanflag )：指定计算是否忽略 NaN 值。</p>
-</li>
-</ul>
-</li>
-<li><p>q&#x3D; cumtrapz ( y )通过梯形法按照单位间距计算的<strong>近似</strong>累积积分。</p>
-<ul>
-<li>如果 y 是向量，则计算累积积分。<br>-  如果 y 是矩阵，则计算每一列的累积积分。<br>-  如果 y 是高维数组，则对大小不等于 1 的第一个维度求累积积分。<br>-  <img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730164427129.png" alt="image-20220730164427129" style="zoom:60%;" /></li>
-</ul>
-</li>
-<li><p>q&#x3D; cumtrapz( x,y )根据 x 指定的坐标或标量间距对 y 进行积分。</p>
-<ul>
-<li>如果 x 是向量，则长度必须与 y 的第一个不等于 1 的维度的大小相同。</li>
-<li>如果 x 是标量，代表间距，此时 cumtrapz() x,y )&#x3D;x* cumtrapz (y)</li>
-</ul>
-</li>
-<li><p>q&#x3D; cumtrapz ( _,dim ) 沿 dim 所指定的维度求积分。</p>
-</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730165045013.png" alt="image-20220730165045013" style="zoom:67%;" />
-
-<h4 id="8-1-2-求积"><a href="#8-1-2-求积" class="headerlink" title="8.1.2 求积"></a>8.1.2 求积</h4><ol>
-<li>prod函数<ul>
-<li>prod 函数可以用来求数组元素的乘积。</li>
-<li>prod 函数的基本用法与 sum 函数类似。</li>
-<li>如果输入空矩阵，则结果为 1.</li>
-<li>如果 A 为 single 类型，则结果也为 single 类型，如果为其他数值和逻辑数据类型，结果都将是 double 类型。</li>
-<li><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730165251176.png" alt="image-20220730165251176" style="zoom:67%;" /></li>
-</ul>
-</li>
-<li>cumprod 函数可以计算累积乘积，用法与 cumsum 类似。</li>
-<li>factorial 函数可以用来计算阶乘。既可以计算标量的阶乘，也可以计算矩阵的阶乘。</li>
-<li>gamma 函数可以用来计算 gamma 函数的值。</li>
-</ol>
-<p>$$<br>\Gamma\left(z\right)&#x3D;\int_{0}^{\infty}{t^{z-1}e^{-t}dt}<br>$$</p>
-<ol start="5">
-<li>gammainc 函数可以用来计算不完全 gamma 函数的值。</li>
-</ol>
-<p>	</p>
-<h3 id="8-2-极限与导数"><a href="#8-2-极限与导数" class="headerlink" title="8.2 极限与导数"></a>8.2 极限与导数</h3><h4 id="8-2-1-极限"><a href="#8-2-1-极限" class="headerlink" title="8.2.1 极限"></a>8.2.1 极限</h4><ol>
-<li>limit 函数可以用来求函数的极限。</li>
-<li>limit( f,var,a 计算函数 f 在变量 var 接近 a 时候的极限。省略 var 时用默认的变量。</li>
-<li>limit(f) 计算函数在 0 的极限。</li>
-<li>limit( f,var,a,’left’) 计算函数 f 在变量 var 接近 a 时候的左极限。right同理。</li>
-</ol>
-<h4 id="8-2-2-导数与差分"><a href="#8-2-2-导数与差分" class="headerlink" title="8.2.2 导数与差分"></a>8.2.2 导数与差分</h4><ol>
-<li><p>根据导数的定义，使用 limit 函数计算导数。</p>
-</li>
-<li><p>diff 函数可以用来直接计算函数的导数。</p>
-<ul>
-<li>diff( f,n )：计算函数 f 的 n 阶导数，默认为 1.</li>
-<li>diff( f,var,n )：计算多元函数 f 关于变量 x 的n 阶偏导数。</li>
-<li><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730171052742.png" alt="image-20220730171052742" style="zoom:50%;" /></li>
-</ul>
-</li>
-<li><p>diff函数的其它用法——差分</p>
-<ul>
-<li>y&#x3D;diff(x)：计算数组沿第一个大小不等于1 的维度相邻元素的差分。</li>
-<li>y&#x3D;diff(x,n):计算 n 阶差分。</li>
-</ul>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730171245298.png" alt="image-20220730171245298"></p>
-<ul>
-<li>y&#x3D;diff(x,n,dim):计算 dim 所指定的维度。</li>
-<li>在步长Δx较小时，差分Δy与步长Δx的比值可以近似为导数。</li>
-</ul>
-</li>
-</ol>
-<h3 id="8-3-级数求和"><a href="#8-3-级数求和" class="headerlink" title="8.3 级数求和"></a>8.3 级数求和</h3><h4 id="8-3-1-有限-x2F-无限级数求和"><a href="#8-3-1-有限-x2F-无限级数求和" class="headerlink" title="8.3.1 有限&#x2F;无限级数求和"></a>8.3.1 有限&#x2F;无限级数求和</h4><ol>
-<li><p>F&#x3D; syssum( f,k,a,b )：计算 k 从 a 取到 b 时，级数 f 的和。</p>
-<ul>
-<li>参数可以用 Inf 来代表无穷大。</li>
-<li>如果级数不收敛，无穷级数求和的结果为 Inf.</li>
-</ul>
-</li>
-<li><p>F&#x3D; symsum( f,k )：计算不定项级数的求和。</p>
-<ul>
-<li>所满足的递推公式： 𝐹(k+1)−𝐹(𝑘)&#x3D;𝑓(𝑘)</li>
-</ul>
-</li>
-</ol>
-<h4 id="8-3-2-等比数列和等差数列求和"><a href="#8-3-2-等比数列和等差数列求和" class="headerlink" title="8.3.2 等比数列和等差数列求和"></a>8.3.2 等比数列和等差数列求和</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730172010422.png" alt="image-20220730172010422"></p>
-<h3 id="8-4-积分"><a href="#8-4-积分" class="headerlink" title="8.4 积分"></a>8.4 积分</h3><h4 id="8-4-1-定积分与不定积分"><a href="#8-4-1-定积分与不定积分" class="headerlink" title="8.4.1 定积分与不定积分"></a>8.4.1 定积分与不定积分</h4><ol>
-<li>int( f,a,b )：计算函数 f 在区间 a,b 上的定积分。</li>
-<li>int( f,x,a,b )：计算多元函数关于 x 在区间 a,b 上的定积分。</li>
-<li>int ( f )：计算函数 f 的不定积分。</li>
-<li>int( f,x )：计算函数 f 关于 x 的不定积分。</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730172457839.png" alt="image-20220730172457839" style="zoom: 50%;" />
-
-<h4 id="8-4-2-多重积分"><a href="#8-4-2-多重积分" class="headerlink" title="8.4.2 多重积分"></a>8.4.2 多重积分</h4><ol>
-<li>q&#x3D;integral2( fun,xmin,xmax,ymin,ymax )在平面区域 xmin ≤ x  ≤ xmax 和 ymin ≤ y ≤ ymax 上计算函数 z&#x3D;fun( x,y )的积分。</li>
-<li>q&#x3D;integral2( __ , ‘Name’,’Value’ )可以在后面添加属性名称和值。</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730173714351.png" alt="image-20220730173714351" style="zoom: 59%;" />
-
-<ol start="3">
-<li>我们也可以用降维的方式用int求二重积分，纯数学方法较为麻烦，略去。</li>
-<li>integral3函数可以用来求三重积分，用法类比integral2</li>
-</ol>
-<h4 id="8-4-3-泰勒展开"><a href="#8-4-3-泰勒展开" class="headerlink" title="8.4.3 泰勒展开"></a>8.4.3 泰勒展开</h4><ol>
-<li>T &#x3D; taylor(f,var)计算f在变量var&#x3D;0附近的六阶泰勒展开式</li>
-<li>T &#x3D; taylor(f,var,a)计算f在变量var&#x3D;a附近的六阶泰勒展开式</li>
-<li>T &#x3D; taylor(___,Name,Value)添加属性名称和值</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730181443885.png" alt="image-20220730181443885" style="zoom:67%;" />
-
-<h4 id="8-4-4-傅里叶变换"><a href="#8-4-4-傅里叶变换" class="headerlink" title="8.4.4 傅里叶变换"></a>8.4.4 傅里叶变换</h4><ol>
-<li>数学公式</li>
-</ol>
-<p>$$<br>f(w)&#x3D;\int_{-\infty}^\infty f(x) e^{-iwx}dx<br>$$</p>
-<p>$$<br>f(x)&#x3D;\frac{1}{2Π} \int_{-\infty}^\infty e^{iwx}dw<br>$$</p>
-<ol start="2">
-<li>fourier(f) 可以计算 f 的傅里叶变换，结果中 w 为变换后的变量。</li>
-<li>fourier (f,transVar) 用 transVar 代替 w.</li>
-<li>fourier (f,var,transVar) 对 var 所代表的变量做傅里叶变换。</li>
-<li>逆变换ifourir同理</li>
-<li>快速傅里叶变换fft</li>
-</ol>
-<h4 id="8-4-5-拉普拉斯变换"><a href="#8-4-5-拉普拉斯变换" class="headerlink" title="8.4.5 拉普拉斯变换"></a>8.4.5 拉普拉斯变换</h4><p>1.数学公式<br>$$<br>f\left(t\right)&#x3D;\int_{c-iw}^{c+iw}{F\left(s\right)e^{st}}ds<br>$$</p>
-<p>$$<br>F\left(s\right)&#x3D;\int_{0}^{\infty}{f\left(t\right)e^{-st}}dt<br>$$</p>
-<ol start="2">
-<li>laplace和ilaplace函数与傅里叶变换类似。</li>
-</ol>
-<h2 id="9-程序设计"><a href="#9-程序设计" class="headerlink" title="9 程序设计"></a>9 程序设计</h2><h3 id="9-1-M文件"><a href="#9-1-M文件" class="headerlink" title="9.1 M文件"></a>9.1 M文件</h3><h4 id="9-1-1-函数文件"><a href="#9-1-1-函数文件" class="headerlink" title="9.1.1 函数文件"></a>9.1.1 函数文件</h4><ol>
-<li><p>函数的写法</p>
-<ul>
-<li><pre><code>function [y1,...,yn]=fname(x1,...,xn)
-
-end
-</code></pre>
-</li>
-<li><p>function是固定格式</p>
-</li>
-<li><p>fname为所定义函数的名称，不可与内置函数或工具箱中的函数相同。</p>
-</li>
-<li><p>y1,…,yn 为所定义函数的输出参数，如果该函数无返回值，可省略。</p>
-</li>
-<li><p>x1,…,xn 为所定义函数的输入参数，如果该函数无输入值，可省略。</p>
-</li>
-<li><p>函数文件的命名应与所定义的函数名称完全 一致。</p>
-</li>
-</ul>
-</li>
-</ol>
-<h3 id="9-2-程序设计"><a href="#9-2-程序设计" class="headerlink" title="9.2 程序设计"></a>9.2 程序设计</h3><blockquote>
-<p>脚本文件前面一定要先写 </p>
-<p>clear </p>
-<p>clc </p>
-<p>close all</p>
-<p>忠告！</p>
-</blockquote>
-<h4 id="9-2-1-程序结构"><a href="#9-2-1-程序结构" class="headerlink" title="9.2.1 程序结构"></a>9.2.1 程序结构</h4><ol>
-<li><p>顺序结构</p>
-</li>
-<li><p>循环结构：for循环和while循环</p>
-<ul>
-<li>for适合重复指定次数的循环</li>
-<li>while适合重复次数无法提前确定的循环</li>
-<li>matlab计算循环的效率较低，尽量用矩阵计算代替循环</li>
-<li><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730220810900.png" alt="image-20220730220810900" style="zoom:50%;" /></li>
-</ul>
-</li>
-<li><p>分支结构：if else,switch case 和 try catch</p>
-</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730221111086.png" alt="image-20220730221111086" style="zoom:67%;" />
-
-<p>try-catch适合用来进行程序调，只有语句1错了才会运行语句2</p>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730221301914.png" alt="image-20220730221301914" style="zoom:67%;" />
-
-<h4 id="9-2-2-流程控制"><a href="#9-2-2-流程控制" class="headerlink" title="9.2.2 流程控制"></a>9.2.2 流程控制</h4><ol>
-<li><p>break 函数 ：提前终止循环。在多层循环嵌套中，break 只终止其所在层级的循环。</p>
-</li>
-<li><p>pause 函数：使程序暂停运行</p>
-<ul>
-<li><p>pause:暂停执行 MATLAB ，等待用户按下任意键恢复。</p>
-</li>
-<li><p>pause(n) ：暂停 n 秒，然后继续。</p>
-</li>
-<li><p>pause on ：允许其后的暂停命令起作用。</p>
-</li>
-<li><p>pause off ：不允许其后的暂停命令起作用。</p>
-</li>
-</ul>
-</li>
-<li><p>continue 函数：跳过本次迭代中的剩余语句，在下一次迭代继续。</p>
-</li>
-<li><p>return 函数：使正在运行的函数正常结束并返回调用它的函数或命令行窗口。</p>
-</li>
-<li><p>echo 函数：在 M 文件执行期间，显示语句。适用于调试和演示。</p>
-</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730223754145.png" alt="image-20220730223754145" style="zoom: 67%;" />
-
-<ol start="6">
-<li><p>warning 函数：显示警告信息。</p>
-</li>
-<li><p>error 函数：显示错误信息。</p>
-</li>
-</ol>
-<img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730224047182.png" alt="image-20220730224047182" style="zoom: 50%;" />
-
-<h4 id="9-2-3-交互时输入"><a href="#9-2-3-交互时输入" class="headerlink" title="9.2.3 交互时输入"></a>9.2.3 交互时输入</h4><ol>
-<li>input 函数可以用来提示用户从键盘输入，并赋值给指定的变量。<ul>
-<li>s&#x3D;input(‘message’)：在屏幕上显示提示信息“message”，待用输入信息后，将相应的值赋给变量s，无输入则返回空矩阵。</li>
-<li>s&#x3D;input(‘message’, ‘s’)：在屏幕上提示信息“message”，将用户输入的信息以字符串的形式赋给变量s，无输入则返回空矩阵。</li>
-</ul>
-</li>
-<li>keyboard函数将暂停正在运行的程序，并将控制权交给键盘，此时命令行窗口的提示符将更改为K&gt;&gt;，然后用户可以通过键盘输入各种MATLAB的语句，结束输入后返回原程序。适合调试模式。<ul>
-<li>终止调试模式并继续执行原程序：dbcont命令。</li>
-<li>终止调试模式并退出文件而不完成执行：dbquit命令。</li>
-</ul>
-</li>
-<li>listdlg函数可以提供一个菜单供用户选择。</li>
-<li>[indx,tf]&#x3D;listdlg(‘ListString’,list,Name,Value)<ul>
-<li>indx：选定行的索引。</li>
-<li>tf：选择逻辑值。如果用户做出了选择，tf为1否则为0.</li>
-<li>list：选项列表，应该为字符向量，字符向量元胞数组或者字符串数组。</li>
-<li>可以在后面添加属性名称和值，包括但不限于列表框提示、列表选择模式等。</li>
-<li>具体的属性名称和值可以查阅MATLAB的帮助文档或工具书。</li>
-</ul>
-</li>
-</ol>
-<h4 id="9-2-4-程序调试"><a href="#9-2-4-程序调试" class="headerlink" title="9.2.4 程序调试"></a>9.2.4 程序调试</h4><ol>
-<li><p>最常见的调试方式有两种，一种是根据程序运行时系统给出的错误信息或者警告信息进行相应的修改，另一种是用户通过设置断点来对程序进行调试。</p>
-</li>
-<li><p>设置断点以下几种方法</p>
-<ul>
-<li>在想插入断点的语句前点击。</li>
-<li>光标放在想要插入断点的某一行，按F12.</li>
-<li>在M文件编辑器中选择断点命令，即可添加断点。</li>
-<li>使用dbstop函数添加断点。</li>
-</ul>
-</li>
-<li><p>dbstop in file：在file中的第一个可执行代码行位置设置断点。</p>
-</li>
-<li><p>dbstop in file at LineNo：在file文件中的指定位置设定断点，MATLAB将会执行到该位置之前暂停。</p>
-</li>
-<li><p>dbstop if error&#x2F;naninf&#x2F;warning：出错时&#x2F;出现Inf或NaN时&#x2F;出现警告时产生中断。</p>
-</li>
-<li><p>清楚断点可以使用类似的方法或dbclear函数。</p>
-</li>
-<li></li>
-</ol>
-<h3 id="9-3-函数句柄"><a href="#9-3-函数句柄" class="headerlink" title="9.3 函数句柄"></a>9.3 函数句柄</h3><ol>
-<li><p>函数句柄也是MATLAB中的一种常见的数据类型，它的<strong>地位</strong>类似于其它计算机语言里的<strong>函数对象</strong>(Javascript,Python)，函数指针(C++)，或者函数引用(Perl)。它的<strong>作用</strong>是将一个函数封装成一个变量，使其能够像其它变量一样在程序的不同部分传递。引入函数句柄可使函数调用变得更加灵活方便，极大地提高了函数调用的速度和效率。MATLAB中函数句柄的使用使得函数也可以成为输入变量，并且能很方便地调用，提高函数的可用性和独立性。</p>
-</li>
-<li><p>函数句柄的创建</p>
-<ul>
-<li><p>直接加@</p>
-<p>语法：@函数名</p>
-<p>fun1 &#x3D; @sin;</p>
-</li>
-<li><p>str2func函数</p>
-<p>语法：str2fun(‘函数名’)</p>
-<p>fun2 &#x3D; str2func(‘cos’);</p>
-</li>
-<li><p>str2func函数</p>
-<p>语法：@(参数列表)单行表达式<br>fun3 &#x3D; @(x, y)x.^2 + y.^2;</p>
-</li>
-</ul>
-</li>
-<li><p>函数句柄的内容可以通过函数functions来显示，将会返回函数句柄所对应的函数名、类型、文件类型及加载方式。</p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/818082-20180703112326464-433190537.png" alt="functions"></p>
-</li>
-<li><p>3、函数句柄的调用：</p>
-<p>假定一个函数的调用格式为：</p>
-<p>[y1,y2,…,yn] &#x3D; FunctionName(x1,x2,…,xm)</p>
-<p>该函数通过以下方式构建函数句柄：Hfunction &#x3D; @FunctionName</p>
-<p>则通过函数句柄实现函数运算的调用格式是：</p>
-<p>直接调用 <strong>Hfunction (x1,x2,…,xm)</strong> </p>
-<p>或者 <strong>[y1,y2,…,yn]&#x3D;feval (Hfunction,x1,x2,…,xm)</strong></p>
-<p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/818082-20180703113430030-1579549790.png" alt="img"></p>
-</li>
-</ol>
-<h2 id="10-微分方程"><a href="#10-微分方程" class="headerlink" title="10 微分方程"></a>10 微分方程</h2><h3 id="10-1-微分方程的求解"><a href="#10-1-微分方程的求解" class="headerlink" title="10.1 微分方程的求解"></a>10.1 微分方程的求解</h3><h4 id="10-1-1-dsolve函数"><a href="#10-1-1-dsolve函数" class="headerlink" title="10.1.1 dsolve函数"></a>10.1.1 dsolve函数</h4><ol>
-<li><p>dsolve函数可以用来求解微分方程。</p>
-</li>
-<li><p>S&#x3D;dsolve(eqn)：用来求解由eqn确定的微分方程，里面用diff来表示导</p>
-</li>
-<li><p>S&#x3D;dsolve(eqn,cond)：可以为方程添加cond所指定的初值或者边界条件。</p>
-</li>
-<li><p>可以在后面添加属性名称和值。</p>
-</li>
-<li><p>[y1,…,yn]&#x3D;dsolve( _ )：求解常微分方程组。</p>
-</li>
-<li><p>R2019b以后的版本，不支持以字符向量或者字符串作为方程的输入。</p>
-<p>如：dsolve(‘Dy&#x3D;y’)应以syms y(t);dsolve(diff(y,t)&#x3D;&#x3D;y);来替代。</p>
-</li>
-</ol>
-<h4 id="10-1-2-练习"><a href="#10-1-2-练习" class="headerlink" title="10.1.2 练习"></a>10.1.2 练习</h4><p><img src="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220731012610660.png" alt="image-20220731012610660"></p>
-<h3 id="10-3-常微分方程的数值方法"><a href="#10-3-常微分方程的数值方法" class="headerlink" title="10.3 常微分方程的数值方法"></a>10.3 常微分方程的数值方法</h3><h3 id="10-4-偏微分方程"><a href="#10-4-偏微分方程" class="headerlink" title="10.4 偏微分方程"></a>10.4 偏微分方程</h3><h2 id="11-最优化算法"><a href="#11-最优化算法" class="headerlink" title="11 最优化算法"></a>11 最优化算法</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yulinzhong.github.io/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" data-id="clbbzc0s40000kwv5clyubiks" data-title="" class="article-share-link">Partager</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-05-08T07:15:44.000Z" itemprop="datePublished">2022-05-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">软件安装与配置</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/">Hexo+Github博客搭建记录</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yulinzhong.github.io/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" data-id="clbbxyixz0000q4v5bomx76z4" data-title="Hexo+Github博客搭建记录" class="article-share-link">Partager</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Latex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/" class="article-date">
-  <time class="dt-published" datetime="2022-05-08T07:15:44.000Z" itemprop="datePublished">2022-05-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">软件安装与配置</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/">LaTeX快速入门</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="LaTeX-快速入门"><a href="#LaTeX-快速入门" class="headerlink" title="${\LaTeX}$ 快速入门"></a>${\LaTeX}$ 快速入门</h1><p>[TOC]</p>
-<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><p>$$<br>\delta,\lambda\<br>\Delta,\Lambda\<br>\Alpha\Beta\<br>\phi,\varphi\<br>\epsilon,\varepsilon\<br>π<br>$$</p>
-<table>
-<thead>
-<tr>
-<th>小写</th>
-<th>大写</th>
-<th>Latex命令</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$\alpha$</td>
-<td>$\Alpha$</td>
-<td>\alpha</td>
-</tr>
-<tr>
-<td>$\beta$</td>
-<td>$\Beta$</td>
-<td>\beta</td>
-</tr>
-<tr>
-<td>$\gamma$</td>
-<td>$\Gamma$</td>
-<td>\gamma</td>
-</tr>
-<tr>
-<td>$\delta$</td>
-<td>$\Delta$</td>
-<td>\delta</td>
-</tr>
-<tr>
-<td>$\epsilon$</td>
-<td>$\Epsilon$</td>
-<td>\epsilon（\varepsilon对应$\varepsilon$）</td>
-</tr>
-<tr>
-<td>$\zeta$</td>
-<td>$\Zeta$</td>
-<td>\zeta</td>
-</tr>
-<tr>
-<td>$\nu$</td>
-<td>$\Nu$</td>
-<td>\nu</td>
-</tr>
-<tr>
-<td>$\xi$</td>
-<td>$\Xi$</td>
-<td>\xi</td>
-</tr>
-<tr>
-<td>$\omicron$</td>
-<td>$\Omicron$</td>
-<td>\omicron</td>
-</tr>
-<tr>
-<td>$\pi$</td>
-<td>$\Pi$</td>
-<td>\pi</td>
-</tr>
-<tr>
-<td>$\rho$</td>
-<td>$\Rho$</td>
-<td>\rho</td>
-</tr>
-<tr>
-<td>$\sigma$</td>
-<td>$\Sigma$</td>
-<td>\sigma</td>
-</tr>
-<tr>
-<td>$\eta$</td>
-<td>$\Eta$</td>
-<td>\eta</td>
-</tr>
-<tr>
-<td>$\theta$</td>
-<td>$\Theta$</td>
-<td>\theta</td>
-</tr>
-<tr>
-<td>$\iota$</td>
-<td>$\Iota$</td>
-<td>\iota</td>
-</tr>
-<tr>
-<td>$\kappa$</td>
-<td>$\Kappa$</td>
-<td>\kappa</td>
-</tr>
-<tr>
-<td>$\lambda$</td>
-<td>$\Lambda$</td>
-<td>\lambda</td>
-</tr>
-<tr>
-<td>$\mu$</td>
-<td>$\Mu$</td>
-<td>\mu</td>
-</tr>
-<tr>
-<td>$\tau$</td>
-<td>$\Tau$</td>
-<td>\tau</td>
-</tr>
-<tr>
-<td>$\upsilon$</td>
-<td>$\Upsilon$</td>
-<td>\upsilon</td>
-</tr>
-<tr>
-<td>$\phi$</td>
-<td>$\phi$</td>
-<td>\phi（\varphi对应$\varphi$）</td>
-</tr>
-<tr>
-<td>$\chi$</td>
-<td>$\Chi$</td>
-<td>\chi</td>
-</tr>
-<tr>
-<td>$\psi$</td>
-<td>$\Psi$</td>
-<td>\psi</td>
-</tr>
-<tr>
-<td>$\omega$</td>
-<td>$\Omega$</td>
-<td>\omega</td>
-</tr>
-</tbody></table>
-<p>如果使用斜体大写希腊字母,再在大写希腊字母的<strong>LaTeX</strong>命令前加上<strong>var</strong></p>
-<h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><p>$$<br>a^2,a_1\<br>x^{y+z},p_{ij},p_ij\<br>x_i,x_{\rm i}\<br>\text{A B},\rm{A B}\<br>\text A B,\rm A B\<br>{\rm A} B\<br>\text{e},\text{i}\<br>$$</p>
-<ol>
-<li>上标<code>^</code>,下标<code>_</code></li>
-<li>如果上下标多于一个字母,则需要用花括号括起来,如<code>p_&#123;ij&#125;</code></li>
-<li>英文字母只有在表示变量(或单一字符的函数名称,如f(x))时才可使用斜体,其余情况都应使用罗马体(直立体).<ul>
-<li>$x_i$: 斜体 i 表示1,2,…,n,为变量</li>
-<li>$x_{\text i}$: 直立体 i 表示”输入”(input)之意,为普通文本,则需要使用<code>&#123;\text i&#125;</code> 或 <code>&#123;\rm i&#125;</code></li>
-</ul>
-</li>
-<li>rm和text的区别<ul>
-<li>text 会显示空格,而rm不会</li>
-<li>text只会让后面第一个字母变成直立体,而rm则会让后面所有字母变成直立体</li>
-</ul>
-</li>
-<li>要让rm只直立一个字母,用<code>&#123;\rm A&#125; B</code></li>
-<li>自然对数的底数e,虚数单位ij都应该用直立体</li>
-</ol>
-<h3 id="分式与根式"><a href="#分式与根式" class="headerlink" title="分式与根式"></a>分式与根式</h3><p>$$<br>\frac{1}{2},\frac 1 2,\<br>\frac 1 {x+y}\<br>\frac {\dfrac 1 x + 1}{y + 1}<br>$$</p>
-<p>$$<br>\sqrt 2,\sqrt{x+y},\sqrt[3]x<br>$$</p>
-<ol>
-<li>分式<code> \frac 1 2</code>  </li>
-<li>当分式分子分母有多个字符时,用大括号框起来<code> \frac 1 &#123;x+y&#125;</code></li>
-<li>分式嵌套时,如果希望字体大小保持不变,用<code>dfrac</code>,如:<code>\frac &#123;\dfrac 1 x + 1&#125;&#123;y + 1&#125; </code></li>
-<li>平方根<code>\sqrt 2</code>,n次方根用<code>\sqrt[3]x</code></li>
-</ol>
-<h3 id="普通运算符"><a href="#普通运算符" class="headerlink" title="普通运算符"></a>普通运算符</h3><p>$$<br>+-\<br>\times,\cdot,\div\<br>\pm,\mp\</p>
-<blockquote>
-<p>&lt;,\ge,\le,\gg,\ll,\ne,\approx,\equiv\<br>\cap,\cup,\in,\notin,\subseteq,\subsetneqq,\varnothing\<br>\forall,\exists,\nexists\<br>\because,\therefore\<br>\mathbb R,\R,\Q,\N,\Z_+\<br>\mathcal F,\mathscr F<br>$$</p>
-</blockquote>
-<ol>
-<li>加减<code>+-</code></li>
-<li>乘<code>\times</code>,点乘<code>\cdot</code>,除<code>\div</code></li>
-<li>正负号<code>\pm</code>(plus-minus),负正号<code>\mp</code>(minus-plus)</li>
-<li>大于小于<code>&lt;&gt;</code>,大于等于<code>\ge</code>(greater than or equal),小于等于<code>\le</code>(less than or equal),远大于<code>\gg</code>,远小于<code>\ll</code>,不等于<code>\ne</code>(not equal),约等于<code>\approx</code>(approximate),恒等于<code>\equiv</code>(equivalent)</li>
-<li>交集<code>\cap</code>,并集<code>\cup</code>,属于<code>\in</code>,不属于<code>\notin</code>,子集<code>\subseteq</code>,真子集<code>\subsetneqq</code>,空集<code>\varnothing</code></li>
-<li>任意<code>\forall</code>,存在<code>\exists</code>,不存在<code>\nexists</code></li>
-<li>因为<code>\because</code>,所以<code>\therefore</code></li>
-<li>实数集<code>\mathbb</code>(blackboard bold)或<code>\R</code>(有的编辑器可能不支持),其它数集<code>\Q</code> <code>\N</code> <code>\Z_+</code></li>
-<li>花体字母<ul>
-<li>傅里叶变换<code>\mathcal F</code>(calligraphy,书法),或<code>\mathscr F</code></li>
-</ul>
-</li>
-</ol>
-<hr>
-<p>$$<br>\cdots,\vdots,\ddots<br>$$</p>
-<p>省略号<code>\cdots</code>,纵向省略号<code>\vdots</code>(vertical),斜向省略号<code>\ddots</code>(diagonal,对角的)</p>
-<hr>
-<p>$$<br>\infty,\partial,∂,\nabla,\propto,\degree<br>$$</p>
-<p>无穷<code>\infty</code>(infinity,无穷)</p>
-<p>偏微分符号<code>\partial</code></p>
-<p>拉普拉斯算子<code>\nabla</code></p>
-<p>正比于<code>\propto</code>(proportional to,正比于)</p>
-<p>度<code>\degree</code></p>
-<hr>
-<p>$$<br>\sin x,\sec x,\cosh x\<br>\log_2 x, \ln x,\lg x\<br>\lim_{x \to 0} \frac {x}{\sin x}\<br>\max x<br>$$</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\sin</span> x,<span class="keyword">\sec</span> x,<span class="keyword">\cosh</span> x</span><br><span class="line"><span class="keyword">\log</span><span class="built_in">_</span>2 x, <span class="keyword">\ln</span> x,<span class="keyword">\lg</span> x</span><br><span class="line"><span class="keyword">\lim</span><span class="built_in">_</span>&#123;x <span class="keyword">\to</span> 0&#125; <span class="keyword">\frac</span> &#123;x&#125;&#123;<span class="keyword">\sin</span> x&#125;</span><br><span class="line"><span class="keyword">\max</span> x</span><br></pre></td></tr></table></figure>
-
-<p>因为部分编辑器<code>\lim_&#123;x \to 0&#125; \frac &#123;x&#125;&#123;\sin x&#125;</code>极限条件可能会出问题,所以可以使用<code>\limits</code>强制让它在下方,如<code>\lim\limits_&#123;x \to 0&#125; \frac &#123;x&#125;&#123;\sin x&#125;</code></p>
-<h3 id="大型运算符"><a href="#大型运算符" class="headerlink" title="大型运算符"></a>大型运算符</h3><p>$$<br>\sum,\prod\<br>\sum_i,\sum_{i&#x3D;0}^N\<br>\frac{\sum\limits_{i&#x3D;1}^n x_i}{\prod\limits_{i&#x3D;1}^n x_i}<br>$$</p>
-<ol>
-<li>求和<code>\sum</code>,求积<code>\prod</code>(product,乘积)</li>
-<li><code>\sum_i</code>,<code>\sum_&#123;i=0&#125;^N</code></li>
-<li><code>\frac&#123;\sum\limits_&#123;i=1&#125;^n x_i&#125;&#123;\prod\limits_&#123;i=1&#125;^n x_i&#125;</code></li>
-</ol>
-<hr>
-<p>$$<br>\int,\iint,\iiint,\oint,\oiint\<br>\int_{-\infty}^0 f(x),\text d x<br>$$</p>
-<ol>
-<li>积分<code>\int</code>,二重积分<code>\iint</code>,三重积分<code>\iiint</code>,环路积分<code>\oint</code>,环路二重积分<code>\oiint</code></li>
-<li><code>\int_&#123;-\infty&#125;^0 f(x)\,\text d x</code><ul>
-<li>d要用直立体,所以有<code>\text</code></li>
-<li>d和fx要拉开距离,所以用<code>\,</code></li>
-</ul>
-</li>
-</ol>
-<hr>
-<p>$$<br>a, a\<br>a\ a\<br>a\quad a\<br>a\qquad a<br>$$</p>
-<p>从上往下按照空格间距排序:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a\, a\\</span><br><span class="line">a\ a\\</span><br><span class="line">a\quad a\\</span><br><span class="line">a\qquad a</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="标注符号"><a href="#标注符号" class="headerlink" title="标注符号"></a>标注符号</h3><p>$$<br>\vec x,\overrightarrow {AB}\<br>\bar x,\overline{AB}<br>$$</p>
-<ol>
-<li>向量<code>\vec</code>,多个字母的向量<code>\overrightarrow</code></li>
-<li>模长<code>\bar</code>,多个字母的模长<code>\overline</code></li>
-</ol>
-<h3 id="箭头"><a href="#箭头" class="headerlink" title="箭头"></a>箭头</h3><p>$$<br>\leftarrow,\Rightarrow,\Leftrightarrow,\longleftarrow<br>$$</p>
-<p>1.单线箭头<code>\leftarrow</code> <code>\rightarrow</code></p>
-<p>2.双线箭头<code>\Leftarrow</code> <code>\Rightarrow</code></p>
-<p>3.长箭头<code>\longleftarrow</code></p>
-<h3 id="括号与定界符"><a href="#括号与定界符" class="headerlink" title="括号与定界符"></a>括号与定界符</h3><p>$$<br>([]){ }\<br>\lceil,\rceil,\lfloor,\rfloor,||\<br>\left(0,\frac 1 a\right]\<br>\left.\frac {∂f}{∂x}\right|_{x&#x3D;0}<br>$$</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">([])<span class="keyword">\&#123;</span> <span class="keyword">\&#125;</span><span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\lceil</span>,<span class="keyword">\rceil</span>,<span class="keyword">\lfloor</span>,<span class="keyword">\rfloor</span>,||<span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\left</span>(0,<span class="keyword">\frac</span> 1 a<span class="keyword">\right</span>]<span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\left</span>.<span class="keyword">\frac</span> &#123;∂f&#125;&#123;∂x&#125;<span class="keyword">\right</span>|<span class="built_in">_</span>&#123;x=0&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><code>\left(</code>和<code>\right]</code>可以随着式子高度自动调整</li>
-<li><code>\right|</code>高度自适应要在前面加上<code>\left.</code>(虚假的括号)</li>
-</ol>
-<h3 id="多行公式"><a href="#多行公式" class="headerlink" title="多行公式"></a>多行公式</h3><p>$$<br>\begin{align}</p>
-<p>a&amp;&#x3D;b+c+d\<br>&amp;&#x3D;e+f</p>
-<p>\end{align}<br>$$</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;align&#125;</span><br><span class="line"></span><br><span class="line">a<span class="built_in">&amp;</span>=b+c+d<span class="keyword">\\</span></span><br><span class="line"><span class="built_in">&amp;</span>=e+f</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;align&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>左对齐<code>\begin&#123;align&#125;</code> <code>\end&#123;align&#125;</code></li>
-<li><code>&amp;</code>(ampersand)表示在括号处对齐</li>
-</ol>
-<h3 id="大括号"><a href="#大括号" class="headerlink" title="大括号"></a>大括号</h3><p>$$<br>f(x)&#x3D;</p>
-<p>\begin{cases}</p>
-<p>\sin x, &amp; -π\le x \le π\<br>0,&amp; \text{其他}</p>
-<p>\end{cases}<br>$$</p>
-<h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p>$$<br>\begin{matrix}</p>
-<p>a &amp; b &amp; \cdots &amp; c \<br>\vdots&amp; \vdots &amp; \ddots &amp; \vdots \<br>e &amp; f&amp; \cdots &amp; g</p>
-<p>\end{matrix}<br>$$</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;matrix&#125;</span><br><span class="line"></span><br><span class="line">a <span class="built_in">&amp;</span> b <span class="built_in">&amp;</span> <span class="keyword">\cdots</span> <span class="built_in">&amp;</span> c <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\vdots</span><span class="built_in">&amp;</span> <span class="keyword">\vdots</span> <span class="built_in">&amp;</span> <span class="keyword">\ddots</span> <span class="built_in">&amp;</span> <span class="keyword">\vdots</span> <span class="keyword">\\</span></span><br><span class="line">e <span class="built_in">&amp;</span> f<span class="built_in">&amp;</span> <span class="keyword">\cdots</span> <span class="built_in">&amp;</span> g</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;matrix&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<hr>
-<p>$$<br>\begin{bmatrix}</p>
-<p>a &amp; b &amp; \cdots &amp; c \<br>\vdots&amp; \vdots &amp; \ddots &amp; \vdots \<br>e &amp; f&amp; \cdots &amp; g</p>
-<p>\end{bmatrix}</p>
-<p>\begin{pmatrix}</p>
-<p>a &amp; b &amp; \cdots &amp; c \<br>\vdots&amp; \vdots &amp; \ddots &amp; \vdots \<br>e &amp; f&amp; \cdots &amp; g</p>
-<p>\end{pmatrix}</p>
-<p>\begin{vmatrix}</p>
-<p>a &amp; b &amp; \cdots &amp; c \<br>\vdots&amp; \vdots &amp; \ddots &amp; \vdots \<br>e &amp; f&amp; \cdots &amp; g</p>
-<p>\end{vmatrix}<br>$$</p>
-<p>同样的,只需要把<code>matrix</code>分别改成<code>bmatrix</code> <code>pmatrix</code> <code>vmatrix</code>即可得到不同样式的矩阵(行列式)</p>
-<hr>
-<p>$$<br>\bf A,\bf B^{\rm T}<br>$$</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\bf A,\bf B^&#123;\rm T&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>粗体表示矩阵,<code>\bf</code>(bold face,粗体)</li>
-<li>转置符号要用直立体</li>
-</ol>
-<h3 id="实战演练"><a href="#实战演练" class="headerlink" title="实战演练"></a>实战演练</h3><p>$$<br>f(x) &#x3D; \frac 1 {\sqrt{2\pi} \sigma} {\rm e} ^ {-\frac {(x-\mu)^2}{2\sigma ^ 2}}\<br>f(x) &#x3D; \frac 1 {\sqrt{2\pi} \sigma} \exp \left[ {-\frac {(x-\mu)^2}{2\sigma ^ 2}}\right]<br>$$</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f(x) = <span class="keyword">\frac</span> 1 &#123;<span class="keyword">\sqrt</span>&#123;2<span class="keyword">\pi</span>&#125; <span class="keyword">\sigma</span>&#125; &#123;<span class="keyword">\rm</span> e&#125; <span class="built_in">^</span> &#123;-<span class="keyword">\frac</span> &#123;(x-<span class="keyword">\mu</span>)<span class="built_in">^</span>2&#125;&#123;2<span class="keyword">\sigma</span> <span class="built_in">^</span> 2&#125;&#125;<span class="keyword">\\</span></span><br><span class="line">f(x) = <span class="keyword">\frac</span> 1 &#123;<span class="keyword">\sqrt</span>&#123;2<span class="keyword">\pi</span>&#125; <span class="keyword">\sigma</span>&#125; <span class="keyword">\exp</span> <span class="keyword">\left</span>[ &#123;-<span class="keyword">\frac</span> &#123;(x-<span class="keyword">\mu</span>)<span class="built_in">^</span>2&#125;&#123;2<span class="keyword">\sigma</span> <span class="built_in">^</span> 2&#125;&#125;<span class="keyword">\right</span>]</span><br></pre></td></tr></table></figure>
-
-
-
-<hr>
-<p>$$<br>\lim\limits_{N\to \infty} P \left{ \left| \frac {I\left( \alpha_i \right)}{N} - H(s) \right| &lt; \varepsilon  \right} &#x3D; 1<br>$$</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\lim</span><span class="keyword">\limits</span><span class="built_in">_</span>&#123;N<span class="keyword">\to</span> <span class="keyword">\infty</span>&#125; P <span class="keyword">\left</span><span class="keyword">\&#123;</span> <span class="keyword">\left</span>| <span class="keyword">\frac</span> &#123;I<span class="keyword">\left</span>( <span class="keyword">\alpha</span><span class="built_in">_</span>i <span class="keyword">\right</span>)&#125;&#123;N&#125; - H(s) <span class="keyword">\right</span>| &lt; <span class="keyword">\varepsilon</span>  <span class="keyword">\right</span><span class="keyword">\&#125;</span> = 1</span><br></pre></td></tr></table></figure>
-
-
-
-<hr>
-<p>$$<br>x(n) &#x3D; \frac 1 {2\pi} \int _{-π} ^ π X\left( {\rm e} ^ </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yulinzhong.github.io/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/" data-id="clbc4t7990000q4v584z93c5y" data-title="LaTeX快速入门" class="article-share-link">Partager</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LATEX/" rel="tag">LATEX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Catégories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">软件安装与配置</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LATEX/" rel="tag">LATEX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/LATEX/" style="font-size: 10px;">LATEX</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 20px;">博客</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/">Hexo+Github博客搭建记录</a>
-          </li>
-        
-          <li>
-            <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/">LaTeX快速入门</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 Yu Linzhong<br>
-      Propulsé par <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			主页
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
 </nav>
-    
+			
+		<!--main-->
+		<main>
+			
 
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+
+	<!--cart style-->
+	<div class="layout-cart">
+	<div id="layout-cart">
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" title="  " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						十二月 6日, 2022
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" title="">							
+							
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							Matlab基础入门与进阶1 简介1.1 Matlab帮助系统
+查询函数 知道函数名 help+函数名
+
+MATLAB 联机帮助： helpwin
+
+查询...
+						
+					</p>
+					<p class="post-meta">
+						
 
 
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/" title=" LaTeX快速入门 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="true"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						五月 8日, 2022
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/" title="LaTeX快速入门">							
+							
+	<a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/" itemprop="url">
+		LaTeX快速入门
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							${\LaTeX}$ 快速入门[TOC]
+数学公式希腊字母$$\delta,\lambda\\Delta,\Lambda\\Alpha\Beta\\phi...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" title=" Hexo+Github博客搭建记录 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="true"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						五月 8日, 2022
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" title="Hexo+Github博客搭建记录">							
+							
+	<a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" itemprop="url">
+		Hexo+Github博客搭建记录
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							Welcome to Hexo! This is your very first post. Check documentation for more i...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+	</div>
+	
+	
+	<div id="pagination">
+		
+	</div>
+
+	
+
+</div>
+	
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2022, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/plugin/search/ziploader.js"></script>
+<script src="/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/search.zip',
+		version_Path = '/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
 
 
 
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
 
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
+	</body>	
 </html>
