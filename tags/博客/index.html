@@ -35,7 +35,7 @@
 <script>
     const CONFIG_BGIMAGE = {
       mode: 'normal',
-      normalSrc: '/img/header-bg.jpg',
+      normalSrc: '/img/header-bg2.jpg',
       randomYouMax: 110,
       randomYouSrc: 'https://sariay.github.io/Random-img/',
 	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
@@ -258,30 +258,6 @@
                 </li>
             
                 <li>
-                    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/">
-            			<em year="2022">
-                            05-08
-                        </em>
-        			    <span itemprop="name">
-                            Hexo+Github博客搭建记录
-                        </span>
-        			    
-                			<a href="/tags/Hexo/" class="tag">
-                				Hexo
-                			</a>
-                        
-                			<a href="/tags/Github/" class="tag">
-                				Github
-                			</a>
-                        
-                			<a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag">
-                				博客
-                			</a>
-                        
-                    </a>
-                </li>
-            
-                <li>
                     <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/">
             			<em year="2022">
                             05-08
@@ -294,12 +270,36 @@
                 				Hexo
                 			</a>
                         
+                			<a href="/tags/LATEX/" class="tag">
+                				LATEX
+                			</a>
+                        
                 			<a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag">
                 				博客
                 			</a>
                         
-                			<a href="/tags/LATEX/" class="tag">
-                				LATEX
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/">
+            			<em year="2022">
+                            05-08
+                        </em>
+        			    <span itemprop="name">
+                            Hexo+Github博客搭建记录
+                        </span>
+        			    
+                			<a href="/tags/Hexo/" class="tag">
+                				Hexo
+                			</a>
+                        
+                			<a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag">
+                				博客
+                			</a>
+                        
+                			<a href="/tags/Github/" class="tag">
+                				Github
                 			</a>
                         
                     </a>
@@ -330,20 +330,20 @@
 
             <ul>
                 <li>
-                    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/">
+                    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/">
                         <em>
                             05-08
                         </em>
                         <span itemprop="name">
-                            Hexo+Github博客搭建记录
+                            LaTeX快速入门
                         </span>
                         
                             <a href="/tags/Hexo/" class="tag">
                                 Hexo
                             </a>
                         
-                            <a href="/tags/Github/" class="tag">
-                                Github
+                            <a href="/tags/LATEX/" class="tag">
+                                LATEX
                             </a>
                         
                             <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag">
@@ -360,12 +360,12 @@
 
             <ul>
                 <li>
-                    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/">
+                    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/">
                         <em>
                             05-08
                         </em>
                         <span itemprop="name">
-                            LaTeX快速入门
+                            Hexo+Github博客搭建记录
                         </span>
                         
                             <a href="/tags/Hexo/" class="tag">
@@ -376,8 +376,8 @@
                                 博客
                             </a>
                         
-                            <a href="/tags/LATEX/" class="tag">
-                                LATEX
+                            <a href="/tags/Github/" class="tag">
+                                Github
                             </a>
                                
                     </a>
@@ -464,25 +464,32 @@
 </footer>
 		
 	<!-- Local or hitokoto! -->
-
-	
-<script src="/plugin/motto/motto.js"></script>
-
-	
-	<script type="text/javascript">
+ 
+	<!-- 现代写法，推荐 -->
+	<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
+	<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+	<!--End-->
+	<script>
 		(function motto(){
-			let mottoText = getMingYanContent().split('</br> - </br>'),
-			
-			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
-			
-			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
-			
-			mottoTextContent = mottoTextContent.trim().substring(0, 100);
-		
-			$("#motto-content").html( mottoTextContent);
-			$("#motto-author").html( mottoTextFrom  );
-		})();	
-	</script>	
+			fetch('https://v1.hitokoto.cn/?c=d')
+				.then(function (res){
+				return res.json();
+			}).then(function (data) {
+				$("#motto-content").html( data.hitokoto?data.hitokoto:'请刷新...' );
+				
+				let	mottoAuthor =' ';
+					mottoAuthor += data.creator?data.creator:'一言';
+					mottoAuthor += "　/　";
+					mottoAuthor += data.from?data.from:'一言官网';
+					
+				$("#motto-author").html( mottoAuthor );
+			})
+			.catch(function (err) {
+				console.error(err);
+			})			
+		})();
+	</script>
 
 
 
