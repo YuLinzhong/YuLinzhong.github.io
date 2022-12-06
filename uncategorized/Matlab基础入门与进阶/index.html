@@ -6,15 +6,187 @@
   
   <title>YuLinzhong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Blog">
-<meta property="og:type" content="website">
+  <meta name="description" content="Matlab基础入门与进阶1 简介1.1 Matlab帮助系统 查询函数 知道函数名 help+函数名  MATLAB 联机帮助： helpwin  查询函数 不知道全部函数名 模糊查询 lookfor 函数信息  内存变量列表： who  内存变量信息： whos  目录中的文件列表： what  确定文件位置： which  变量检验函数： exist   1.2 Matlab 搜索路径 查看">
+<meta property="og:type" content="article">
 <meta property="og:title" content="YuLinzhong">
-<meta property="og:url" content="https://yulinzhong.github.io/index.html">
+<meta property="og:url" content="https://yulinzhong.github.io/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/index.html">
 <meta property="og:site_name" content="YuLinzhong">
-<meta property="og:description" content="Blog">
+<meta property="og:description" content="Matlab基础入门与进阶1 简介1.1 Matlab帮助系统 查询函数 知道函数名 help+函数名  MATLAB 联机帮助： helpwin  查询函数 不知道全部函数名 模糊查询 lookfor 函数信息  内存变量列表： who  内存变量信息： whos  目录中的文件列表： what  确定文件位置： which  变量检验函数： exist   1.2 Matlab 搜索路径 查看">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728170346164.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728170420994.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728171249352.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728170443749.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728171401456.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728171610887.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728172343857.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728172713604.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728172635000.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728172704139.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728171854028.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728173528720.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728173657947.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728173838516.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728174318354.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728174457205.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728175146897.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728175351118.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728175512638.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728181149383.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728181439831.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728181442916.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728181503864.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728182227790.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728182521425.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728182254038.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728182436585.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728183245396.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728183249989.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728183455771.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728212049878.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728212309462.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728212502878.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728214414512.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728215043947.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728221625215.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728222517086.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728222853497.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728222935502.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728223210405.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728223621937.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728224106289.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728224110070.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728223922759.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728225435918.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728230504971.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728231215989.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728231249546.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728231338755.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728232729361.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728234717473.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728234723421.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728234748869.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728234753910.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728235658708.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728235703437.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728235715621.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728235719107.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729000149310.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729000343256.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729000901125.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729000903708.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729001558814.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002136920.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002108076.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002117981.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002735281.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002806181.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002901113.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729002923058.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729003100099.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729003210546.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729140725411.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729141753358.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729141847178.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143621332.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143206609.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143212948.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143221977.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729143224423.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729144704162.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729151126403.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729151512589.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729152438626.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729155330913.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729155402774.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729160539219.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729161142438.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729161145517.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729162254383.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729172307794.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729172301103.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707142228738.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707142433849.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707142553148.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729164531443.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707142907278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707143016276.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729170358840.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729170336644.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707143353362.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707143500899.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707143617546.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210707143724812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2021070714384395.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2prXzEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729231222107.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/20200525224510426.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/20200525224541164.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/20200525224831678.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/2020052522515270.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/8370d32a2370410d95201deb8f2a4ade.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/a31055d7b4ca488389f97cbaffbe6c2b.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/0d3af3fffa4c42e193636fde99125d05.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729232647266.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729232650557.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729233048010.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729233607382.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729233749899.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234214566.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234242198.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234252425.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234339111.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234350549.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220729234356597.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730000811506.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730000818240.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730000822153.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730000915554.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730001428204.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730001511360.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730001517046.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730002330490.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730004138903.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730002931089.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730004304318.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730004635274.png">
+<meta property="og:image" content="https://yulinzhong.github.io/AppData/Roaming/Typora/typora-user-images/image-20220730005108857.png">
+<meta property="og:image" content="https://yulinzhong.github.io/AppData/Roaming/Typora/typora-user-images/image-20220730005142599.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005329652.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005339660.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005518175.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005935349.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730005949722.png">
+<meta property="og:image" content="https://yulinzhong.github.io/AppData/Roaming/Typora/typora-user-images/image-20220730162939127.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730162954456.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163006650.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163016789.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163030422.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163153052.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163627911.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163647339.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730163720918.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730164427129.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730165045013.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730165251176.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730171052742.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730171245298.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730172010422.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730172457839.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730173714351.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730181443885.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730220810900.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730221111086.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730221301914.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730223754145.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220730224047182.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/818082-20180703112326464-433190537.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/818082-20180703113430030-1579549790.png">
+<meta property="og:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220731012610660.png">
+<meta property="article:published_time" content="2022-12-06T08:48:46.874Z">
+<meta property="article:modified_time" content="2022-08-21T01:37:32.025Z">
 <meta property="article:author" content="Yu Linzhong">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://c7f49cfdf594b0ba.oss-cn-hangzhou.aliyuncs.com/img/typora/image-20220728170346164.png">
   
     <link rel="alternate" href="/atom.xml" title="YuLinzhong" type="application/atom+xml">
   
@@ -71,9 +243,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Matlab基础入门与进阶" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Matlab基础入门与进阶" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/uncategorized/Matlab%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E4%B8%8E%E8%BF%9B%E9%98%B6/" class="article-date">
   <time class="dt-published" datetime="2022-12-06T08:48:46.874Z" itemprop="datePublished">2022-12-06</time>
@@ -1281,68 +1451,19 @@ end
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-05-08T07:15:44.000Z" itemprop="datePublished">2022-05-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">软件安装与配置</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/">Hexo+Github博客搭建记录</a>
-    </h1>
+    <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Hexo+Github博客搭建记录</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yulinzhong.github.io/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/hello-world/" data-id="clbbxyixz0000q4v5bomx76z4" data-title="Hexo+Github博客搭建记录" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
