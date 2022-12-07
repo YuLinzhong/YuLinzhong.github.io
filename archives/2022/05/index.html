@@ -17,8 +17,8 @@
     
   </title>
   <meta name="author" content="Yu Linzhong">
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
+  <meta name="keywords" content="人文 | 科技" />
+  <meta name="description" content="江枫渔火，林尽晚钟" />
 	<!-- favicon -->
   <link rel="shortcut icon" href="/img/favicon.ico">
 
@@ -35,7 +35,7 @@
 <script>
     const CONFIG_BGIMAGE = {
       mode: 'normal',
-      normalSrc: '/img/header-bg2.jpg',
+      normalSrc: '/img/header-bg.jpg',
       randomYouMax: 110,
       randomYouSrc: 'https://sariay.github.io/Random-img/',
 	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
@@ -203,7 +203,7 @@
 -->
 
 	
-	总计 1 文章
+	总计 2 文章
 	
 
 		</i>
@@ -216,6 +216,22 @@
         
         
         <ul>
+            
+                <li>
+                    <a href="/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/Github-Hexo-Annie%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+            			<em year="2022">
+                            12-07
+                        </em>
+        			    <span itemprop="name">
+                            Github+Hexo+Annie博客搭建
+                        </span>
+        			    
+                			<a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="tag">
+                				博客搭建
+                			</a>
+                        
+                    </a>
+                </li>
             
                 <li>
                     <a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/">
@@ -379,32 +395,25 @@
 </footer>
 		
 	<!-- Local or hitokoto! -->
- 
-	<!-- 现代写法，推荐 -->
-	<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
-	<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-	<!--End-->
-	<script>
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
 		(function motto(){
-			fetch('https://v1.hitokoto.cn/?c=d')
-				.then(function (res){
-				return res.json();
-			}).then(function (data) {
-				$("#motto-content").html( data.hitokoto?data.hitokoto:'请刷新...' );
-				
-				let	mottoAuthor =' ';
-					mottoAuthor += data.creator?data.creator:'一言';
-					mottoAuthor += "　/　";
-					mottoAuthor += data.from?data.from:'一言官网';
-					
-				$("#motto-author").html( mottoAuthor );
-			})
-			.catch(function (err) {
-				console.error(err);
-			})			
-		})();
-	</script>
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
 
 
 
