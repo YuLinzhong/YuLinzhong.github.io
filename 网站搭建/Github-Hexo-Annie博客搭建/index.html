@@ -494,7 +494,7 @@
 <h4 id="2-1-2-4-Front-matter"><a href="#2-1-2-4-Front-matter" class="headerlink" title="2.1.2.4 Front-matter"></a>2.1.2.4 Front-matter</h4><p><code>		Front-matter</code> 是<code>md</code>文件最上方以 <code>---</code>分隔的区域，用于指定个别文件的变量，官方[配置描述](<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Front-matter | Hexo</a>)有详细介绍，下为示例。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">title: Github+Hexo+Annie博客搭建 		</span><br><span class="line">toc: true							   </span><br><span class="line">mathjax: true						   </span><br><span class="line">date: 2022-12-07 14:25:32			   </span><br><span class="line">cover: \img\cover\cover001.jpg		   </span><br><span class="line">tags: 								   </span><br><span class="line">- 博客搭建</span><br><span class="line">categories: 						   </span><br><span class="line">- 网站搭建</span><br></pre></td></tr></table></figure>
 
-<blockquote class="colorquote danger"><p>冒号后一定要有空格！</p></blockquote>
+<blockquote class="colorquote danger"><p>-号和冒号后一定要有空格！</p></blockquote>
 
 <p>​		不同主题其<code>Front-matter</code>可能会有些许不同，因为本博客采用<code>Annie</code>主题，所以和官网的有出入。</p>
 <h4 id="2-1-2-5-layout（布局）"><a href="#2-1-2-5-layout（布局）" class="headerlink" title="2.1.2.5 layout（布局）"></a>2.1.2.5 layout（布局）</h4><ol>
@@ -589,6 +589,8 @@
 <p>文章的模板样例如下，<code>cover</code>即为文章封面图的路径，你可以使用相对路径或绝对路径。<code>toc</code>表示目录是否打开，<code>mathjax</code>表示是否适配公式，<code>tags</code>表示标签，最多只能有三个，<code>catagories</code>表示分类，有且只能由一种。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">cover:</span><br><span class="line">toc: true</span><br><span class="line">mathjax: true</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<blockquote class="colorquote danger"><ol><li><p>冒号后一定要有空格！</p></li><li><p>tags和categories都要先换行然后<code>- example</code>，注意<code>-</code>号后要有空格</p></li></ol></blockquote>
+
 <h2 id="3-4-主题更新"><a href="#3-4-主题更新" class="headerlink" title="3.4 主题更新"></a>3.4 主题更新</h2><p>如果你使用主题后，几乎未改动代码，那么可以使用下面的<code>命令行</code>更新主题。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd themes/Annie</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
 
@@ -617,6 +619,10 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
+			<a href="/%E6%96%87%E5%AD%A6/%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%A2%81%E5%8D%9A/" title="日落大道/梁博" rel="prev">
+				&laquo;上一篇
+			</a>
+		
 		
 			<a href="/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/Latex/" title="LaTeX快速入门" rel="next">
 				下一篇&raquo;
@@ -636,6 +642,37 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/%E6%96%87%E5%AD%A6/%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%A2%81%E5%8D%9A/" title="日落大道/梁博">
+								日落大道/梁博			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十二月 7日, 2022				
+							</p>
+							<p class="relate-post-content">
+								每当黄昏阳光把所有都渲染你看那金黄多耀眼
+
+总是梦见云层之上飞过子午线
+分不清是黑夜还是白天
+带着装不下的期待匆匆的赶来
+我再想一遍想一遍
+我们寻找着在这条路的中间
+我们迷失着在这条路的两端
+每当黄昏阳光把所有都渲染
+你看那金黄多耀眼...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/%E6%96%87%E5%AD%A6/%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%A2%81%E5%8D%9A/" title="日落大道/梁博">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="\img\cover\cover002.jpg" alt="日落大道/梁博"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
